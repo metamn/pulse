@@ -20,7 +20,7 @@ fs.readFile('./code/client_secret_147970240404-nbgj0iirt8rdnk8v2r23e7j6f5f0eqgg.
   }
   // Authorize a client with the loaded credentials, then call the
   // Gmail API.
-  authorize(JSON.parse(content), listLabels);
+  authorize(JSON.parse(content), messagesToJSON);
 });
 
 /**
@@ -121,6 +121,32 @@ function listLabels(auth) {
         var label = labels[i];
         console.log('- %s', label.name);
       }
+    }
+  });
+}
+
+
+function messagesToJSON(auth) {
+  var label = getLabel(auth, 'To clients');
+  console.log('l:' + label);
+}
+
+function getLabel(auth, labelName) {
+  var gmail = google.gmail('v1');
+  gmail.users.labels.get({
+    auth: auth,
+    userId: 'me',
+    id: labelName,
+  }, function(err, response) {
+    if (err) {
+      console.log('The API returned an error: ' + err);
+      return;
+    }
+    var label = response.label;
+    if (label.length == 0) {
+      console.log('No label "' + labelName + '" found.');
+    } else {
+      return label;
     }
   });
 }
