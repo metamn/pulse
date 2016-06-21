@@ -1,0 +1,13 @@
+@mixin x-svg-inline {
+  .svg-inline {
+    @include svg-inline;
+
+    &--fullscreen {
+      @include svg-inline($styleable: true);
+      .svg {
+        fill: black;
+        stroke: green;
+      }
+    }
+  }
+}

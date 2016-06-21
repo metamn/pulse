@@ -1,0 +1,30 @@
+// Image
+//
+// Displaying an image in different ways
+//
+// $stretch - To fill or not to fill the maximum available space. See <section.stretched-image> and <section.fluid-image>
+// $preloading - displaying a spinning image
+// $placeholder-color - displaying a background color until the image is loaded
+//
+// Styleguide img
+@mixin img($stretch: fluid, $preloading: false, $placeholder-color: $white) {
+  @if ($stretch == fluid) {
+    @include img--fluid;
+  }
+
+  @if ($stretch == stretched) {
+    @include img--stretched;
+  }
+
+  @if ($placeholder-color != false) {
+    @include img--with-placeholder($placeholder-color);
+  }
+
+  @if ($preloading != false) {
+    @include img--preloading;
+  }
+
+  &--loaded {
+    @include img--loaded;
+  }
+}

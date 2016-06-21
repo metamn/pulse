@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Breakpoints",
+    "description": "<p>Used to adapt content and design to devices.</p>\n",
+    "deprecated": false,
+    "experimental": false,
+    "reference": "breakpoints",
+    "depth": 1,
+    "weight": 0,
+    "referenceURI": "breakpoints",
+    "markup": false,
+    "modifiers": [],
+    "parameters": []
+  }
+]

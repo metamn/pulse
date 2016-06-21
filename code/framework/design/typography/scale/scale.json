@@ -1,0 +1,18 @@
+{
+  "scale": [
+    {
+      "name": "default",
+      "description": "The default font size and line height",
+      "properties": [
+        {
+          "name": "font-size",
+          "value": "100%"
+        },
+        {
+          "name": "line-height",
+          "value": "1.25"
+        }
+      ]
+    }
+  ]
+}

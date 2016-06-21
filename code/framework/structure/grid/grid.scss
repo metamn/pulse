@@ -1,0 +1,38 @@
+// Grid
+//
+// Displays items in a grid
+//
+// Experimental: the container cannot contain other elements like the grid title, just the grid items
+//
+// Styleguide grid
+@mixin grid($items-per-row, $margin-right: 0px, $margin-bottom: 0px, $max-items-to-display: null) {
+  display: flex;
+  flex-wrap: wrap;
+
+  $item-width: percentage(1 / $items-per-row);
+
+  > * {
+    flex-basis: calc(#{$item-width} - (((#{$items-per-row} - 1) * #{$margin-right}) / #{$items-per-row}));
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+
+    // Now we can have padding and border for items
+    box-sizing: border-box;
+
+    // Right margins
+    &:nth-child(#{$items-per-row}n + 1) {
+      margin-right: 0;
+    }
+
+    // Only $max-items-to-display number of items will be shown
+    @if ($max-items-to-display != null) {
+      display: none;
+
+      @for $i from 1 to $max-items-to-display + 1 {
+        &:nth-child(#{$i} + 1) {
+          display: flex;
+        }
+      }
+    }
+  }
+}

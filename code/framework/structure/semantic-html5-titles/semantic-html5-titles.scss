@@ -1,0 +1,16 @@
+// Semantic HTML5 Titles
+//
+// The HTML5 structure should outline well in the [HTML5 Outliner](https://gsnedders.html5.org/).
+// For that all content is wrapped into semantic HTML5 elements like `<section>`, `<article>`, `<nav>` etc.
+// These semantic HTML5 elements must have a title to display well in the Outliner but they must hidden on the UI.
+// This mixin hides by default the titles of semantic HTML5 elements
+//
+// Styleguide semantic-html5-titles
+
+@mixin semantic-html5-titles {
+  section, article, aside, nav, header, footer {
+    > h3 {
+      display: none;
+    }
+  }
+}

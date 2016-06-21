@@ -1,0 +1,9 @@
+@mixin p {
+  p {
+    word-wrap: break-word;
+  }
+
+  p + p {
+    margin-top: $lem;
+  }
+}

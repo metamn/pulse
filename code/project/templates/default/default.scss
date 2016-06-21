@@ -1,0 +1,19 @@
+// The default page template
+//
+// 1. It displays a `<head>` section and inserts javascripts in the footer if necessary
+// 2. Resets the browser
+// 3. Sets up the framework with default typography, colors and more
+// 4. Prepares popup content
+//
+// Styleguide default-template
+
+@include html-css-reset;
+
+html {
+  body {
+    @include default--mobile;
+    @include semantic-html5-titles;
+    @include typography-reset;
+    @include text-style(default);
+  }
+}

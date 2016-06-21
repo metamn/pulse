@@ -1,0 +1,15 @@
+// Background image
+//
+// Sets an image as background for an element
+//
+// Styleguide background-image
+@mixin background-image($background-color: $blue, $stretched: true) {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: $background-color;
+
+  @if ($stretched == true) {
+    @include background-image--stretched;
+  }
+}

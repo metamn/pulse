@@ -1,0 +1,19 @@
+// Slider
+//
+// A content slider based on an idea from [Google Web Fundamentals](https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views).
+// Navigation is supported by bullets, click on image and swipe on touch-screens.
+//
+// Styleguide slider.
+@mixin slider {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__slides {
+    @include slider__slides;
+  }
+
+  &__bullets {
+    @include slider__bullets;
+  }
+}

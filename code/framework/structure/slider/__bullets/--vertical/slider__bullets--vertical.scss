@@ -1,0 +1,7 @@
+@mixin slider__bullets--vertical {
+  flex-direction: column;
+
+  .bullet {
+    margin-right: 0;
+  }
+}

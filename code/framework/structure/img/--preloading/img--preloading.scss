@@ -1,0 +1,11 @@
+// Image preloading
+//
+// The image won't be displayed until it is completelly loaded. During the load a small animation will be displayed instead.
+// Once the image is fully loaded it's opacity is set to 1
+// The [Imagesloaded script](https://github.com/desandro/imagesloaded) is used fro this task
+//
+// Styleguide image-with-preloader
+@mixin img--preloading {
+  opacity: 0;
+  @include transition(opacity);
+}

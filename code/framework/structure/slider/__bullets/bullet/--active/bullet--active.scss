@@ -1,0 +1,15 @@
+@mixin bullet--active {
+  cursor: default;
+
+  .span {
+    &.inactive {
+      display: none;
+      opacity: 0;
+    }
+
+    &.active {
+      display: flex;
+      opacity: 1;
+    }
+  }
+}

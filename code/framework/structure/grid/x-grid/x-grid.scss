@@ -1,0 +1,16 @@
+@mixin x-grid {
+  &__title,
+  .title {
+    display: flex;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__example1 {
+    @include x-grid__example1;
+  }
+}

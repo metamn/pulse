@@ -1,0 +1,13 @@
+{
+  "icons": [
+    {
+      "title": "Go to FB",
+      "name": "facebook",
+      "url": "http://facebook.com"
+    },
+    {
+      "title": "No link to Twitter",
+      "name": "twitter"
+    }
+  ]
+}

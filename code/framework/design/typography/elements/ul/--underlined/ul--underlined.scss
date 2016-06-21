@@ -1,0 +1,7 @@
+@mixin ul--underlined($padding: $lem / 2) {
+  .li {
+    @include border;
+    margin-bottom: $padding;
+    padding-bottom: $padding;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin x-intrinsic-ratio--simple {
+  .title {
+    display: flex;
+  }
+
+  .container {
+    @include intrinsic-ratio(16, 9, 'p');
+    @include colors(white-on-black);
+    color: red;
+  }
+}

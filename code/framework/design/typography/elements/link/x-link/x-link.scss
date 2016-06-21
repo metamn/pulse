@@ -1,0 +1,6 @@
+@mixin x-link {
+  .link {
+    @include link(blue-on-white, black-on-white, black-on-white, blue-on-white);
+    margin: $lem;
+  }
+}

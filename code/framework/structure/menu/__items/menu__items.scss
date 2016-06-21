@@ -1,0 +1,16 @@
+@mixin menu__items {
+  @include ul;
+
+  @include portrait {
+    @include menu__items--vertical;
+    @include menu__items--inactive;
+
+    &--active {
+      @include menu__items--active;
+    }
+  }
+
+  @include landscape {
+    @include menu__items--horizontal;
+  }
+}

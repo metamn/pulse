@@ -1,0 +1,23 @@
+<aside class="x-grid__example1">
+  <h3 class="title">Grid example 1</h3>
+
+  <div class="container">
+    <h3>Title must be present !!!</h3>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+  </div>
+
+  <p>
+    This grid should display 7 items of 10.
+    On mobile 1 in a row, on tablet 3 in a row, on laptops 4 in a row, on desktops 5 in a row.
+    Items can have any kind of borders and padding since they have set `box-sizing: border-box`.
+  </p>
+</aside>

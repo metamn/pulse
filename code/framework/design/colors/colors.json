@@ -1,0 +1,42 @@
+{
+  "colors": [
+    {
+      "name": "white",
+      "value": "#fff",
+      "description": "Main color"
+    },
+    {
+      "name": "black",
+      "value": "#000",
+      "description": "Main color"
+    }
+  ],
+  "color_pairs": [
+    {
+      "name": "white-on-black",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$white"
+        },
+        {
+          "name": "background-color",
+          "value": "$black"
+        }
+      ]
+    },
+    {
+      "name": "black-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    }
+  ]
+}

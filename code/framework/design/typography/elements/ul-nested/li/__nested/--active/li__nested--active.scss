@@ -1,0 +1,6 @@
+@mixin li__nested--active {
+  > .ul {
+    display: flex;
+    opacity: 1;
+  }
+}

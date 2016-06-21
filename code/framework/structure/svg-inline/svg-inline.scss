@@ -1,0 +1,21 @@
+// Inline SVG
+//
+// It displays an SVG inline, in a fluid and/or responsive way, wrapped into a container.
+// Full details are [aivailable](https://github.com/metamn/svg/blob/master/README.md).
+//
+// $styleable- To accept restyling with CSS or not
+//
+// Styleguide inline-svg
+@mixin svg-inline($styleable: false) {
+  @if ($styleable == true) {
+    @include svg-inline--styleable;
+  }
+
+  &--fullscreen {
+    @include svg-inline--fullscreen;
+  }
+
+  &--responsive {
+    @include svg-inline--responsive;
+  }
+}

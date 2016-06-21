@@ -1,0 +1,4 @@
+@mixin ul--vertical {
+  display: flex;
+  flex-direction: column;
+}

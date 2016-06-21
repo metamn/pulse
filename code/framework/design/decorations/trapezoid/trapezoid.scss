@@ -1,0 +1,24 @@
+// Trapezoid
+//
+// A rectangle transformed into a trapezoid
+//
+// Styleguide trapezoid
+@mixin trapezoid($width, $height, $translateY) {
+  width: $width;
+  height: $height;
+
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @include border(thin, all);
+    transform: perspective(4px) rotateX(1deg) translateY($translateY);
+  }
+}

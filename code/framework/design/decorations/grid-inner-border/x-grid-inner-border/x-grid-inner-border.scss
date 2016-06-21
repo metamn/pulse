@@ -1,0 +1,18 @@
+@mixin x-grid-inner-border {
+  &__title {
+    display: flex;
+  }
+
+  &__container {
+    $nr: 7;
+    @include grid($nr);
+    @include grid-inner-border($nr, 20);
+
+    justify-content: center;
+
+    span {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// CSS Styleable Inline SVG
+//
+// Making an inline SVG to accept style definitions from CSS.
+// Fully documented [here](https://github.com/metamn/svg/blob/master/README.md#style)
+//
+// Styleguide inline-svg-styleable
+@mixin svg-inline--styleable {
+  svg,
+  .svg {
+    rect,
+    path,
+    circle,
+    ellipse,
+    line,
+    polygon,
+    polyline,
+    text,
+    use {
+      all: inherit;
+    }
+  }
+}

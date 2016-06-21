@@ -1,0 +1,14 @@
+@mixin x-slider {
+  .title {
+    display: flex;
+  }
+
+  .slider {
+    @include slider;
+    height: 50vh;
+  }
+
+  .x-slide {
+    @include x-slide;
+  }
+}

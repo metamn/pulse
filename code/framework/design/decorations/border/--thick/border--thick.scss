@@ -1,0 +1,23 @@
+@mixin border--thick($position: bottom) {
+  $border-thick: $lem / 4 solid;
+
+  @if ($position == top) {
+    border-top: $border-thick;
+  }
+
+  @if ($position == bottom) {
+    border-bottom: $border-thick;
+  }
+
+  @if ($position == left) {
+    border-left: $border-thick;
+  }
+
+  @if ($position == right) {
+    border-right: $border-thick;
+  }
+
+  @if ($position == all) {
+    border: $border-thick;
+  }
+}

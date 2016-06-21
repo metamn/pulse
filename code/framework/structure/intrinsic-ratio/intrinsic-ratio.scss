@@ -1,0 +1,26 @@
+// Intrinsic ratio
+//
+// Setting a container to a specific size defined by standard metrics like 16:9 (HD) or 4:3 and so on.
+// The original idea comes from [A List Apart article](http://alistapart.com/article/creating-intrinsic-ratios-for-video).
+//
+// $width - The width of the intrinsic ratio. Like 16, 4, etc...
+// $height - The height of the intrinsic ratio. Like 9, 3, etc ...
+// $item - To which element apply the intrinsic ratio. The element must be wrapped into a parent container where this mixin should be applied.
+//
+// Experimental: The content should be prepared for the intrinsic ratio otherwise behaves ... hm ... ugly. See the example.
+//
+// Styleguide intrinsic-ratio
+@mixin intrinsic-ratio($width, $height, $item) {
+  position: relative;
+  padding-bottom: 100% / ($width / $height);
+  height: 0;
+  overflow: hidden;
+
+  #{$item} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

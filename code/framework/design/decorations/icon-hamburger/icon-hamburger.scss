@@ -1,0 +1,38 @@
+// Hamburger icon
+//
+// It has three states:
+// - default - when the icon is shown as is, without animation
+// - open - when the icon is animated from its close state back to it's original state
+// - close - when the icon is animated to be an X
+//
+// Example:
+// 1. On first load the icon is in `default` state, no animation is added
+// 2. On first click the `default` state is removed and `open` state is added.
+// 3. From now on, every click toggles the `open` and `close` states and the icon never goes back to it's `default` state
+// - This is useful when on first display we dont want to see an animated icon, hence there was no click to have an animation
+//
+// Styleguide hamburger-icon
+@mixin icon-hamburger($width: $lem + $lem / 2) {
+  width: $width;
+  height: $width;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  cursor: pointer;
+
+  .line {
+    display: flex;
+    @include border--thin;
+  }
+
+  &--close {
+    @include icon-hamburger--animation(normal, $width / 4);
+  }
+
+  &--open {
+    @include icon-hamburger--animation(reverse, $width / 4);
+  }
+}

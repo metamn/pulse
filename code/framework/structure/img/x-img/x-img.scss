@@ -1,0 +1,18 @@
+@mixin x-img {
+  &__title {
+    display: flex;
+  }
+
+  .img {
+    @include img($preloading: true);
+  }
+
+  &--fluid {
+    @include x-img--fluid;
+    margin-bottom: $lem;
+  }
+
+  &--stretched {
+    @include x-img--stretched;
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Fluid image",
+    "description": "<p>A fluid image will not fill the available space, if the space is larger than the image it will have a blank border around</p>\n",
+    "deprecated": false,
+    "experimental": false,
+    "reference": "fluid-image",
+    "depth": 1,
+    "weight": 0,
+    "referenceURI": "fluid-image",
+    "markup": false,
+    "modifiers": [],
+    "parameters": []
+  }
+]

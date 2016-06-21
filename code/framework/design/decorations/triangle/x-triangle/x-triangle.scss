@@ -1,0 +1,11 @@
+@mixin x-triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .triangle {
+    @include triangle;
+    margin: $lem;
+  }
+}

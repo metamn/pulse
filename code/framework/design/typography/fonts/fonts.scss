@@ -1,0 +1,110 @@
+
+
+// Fonts
+//
+// Typefaces and fonts used across the site.
+// They are never used directly but set up properly with the `text-style` mixin.
+//
+// Styleguide fonts
+
+
+// Roboto
+// - The default typeface, sans-serif
+// - character set: Latin, Latin extended
+// - served from Google
+// - styles and weights: Normal, Normal italic, Bold, Bold italic, 
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,);
+
+
+// Lato
+// - The headings typeface, sans-serif
+// - character set: Latin, Latin extended
+// - served from Google
+// - styles and weights: Light, Ultra Bold, 
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,900,);
+
+
+
+
+// The font mixin
+@mixin font($variant) {
+
+  @if ($variant == 'roboto-normal') {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'roboto-normal-italic') {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @if ($variant == 'roboto-bold') {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'roboto-bold-italic') {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @if ($variant == 'lato-light') {
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'lato-ultra-bold') {
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+}
+
+
+// Font classes
+
+.roboto-normal {
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-normal-italic {
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-bold-italic {
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-light {
+  font-family: 'lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-ultra-bold {
+  font-family: 'lato', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+

@@ -1,0 +1,12 @@
+@mixin bullet--inactive {
+  .span {
+    &.inactive {
+      @include transition(opacity);
+    }
+
+    &.active {
+      display: none;
+      opacity: 0;
+    }
+  }
+}

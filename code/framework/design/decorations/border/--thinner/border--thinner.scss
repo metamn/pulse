@@ -1,0 +1,23 @@
+@mixin border--thinner($position: bottom) {
+  $border-thinner: $lem / 16 solid;
+
+  @if ($position == top) {
+    border-top: $border-thinner;
+  }
+
+  @if ($position == bottom) {
+    border-bottom: $border-thinner;
+  }
+
+  @if ($position == left) {
+    border-left: $border-thinner;
+  }
+
+  @if ($position == right) {
+    border-right: $border-thinner;
+  }
+
+  @if ($position == all) {
+    border: $border-thinner;
+  }
+}

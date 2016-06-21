@@ -1,0 +1,12 @@
+@mixin html-css-reset__mobile-tap-highlight {
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);
+  }
+}

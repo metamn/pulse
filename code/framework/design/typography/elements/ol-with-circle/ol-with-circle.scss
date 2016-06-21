@@ -1,0 +1,10 @@
+@mixin ol-with-circle {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__item {
+    @include ol-with-circle__item;
+  }
+}

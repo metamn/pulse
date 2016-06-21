@@ -1,0 +1,7 @@
+// Image with placeholder
+//
+//
+// Styleguide image-with-placeholder
+@mixin img--with-placeholder($background: $black) {
+  background: $background;
+}

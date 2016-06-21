@@ -1,0 +1,8 @@
+// Import everything, in the right order
+
+@import 'framework/behavior/**/*.scss';
+@import 'framework/structure/**/*.scss';
+@import 'framework/design/**/*.scss';
+@import 'framework/templates/**/*.scss';
+@import 'project/**/*.scss';
+@import 'pages/**/*.scss';

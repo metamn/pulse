@@ -1,0 +1,15 @@
+[
+  {
+    "header": "typography reset",
+    "description": "<p>Reset typographic elements. Sits on the top of Normalize.css</p>\n",
+    "deprecated": false,
+    "experimental": false,
+    "reference": "typography-reset",
+    "depth": 1,
+    "weight": 0,
+    "referenceURI": "typography-reset",
+    "markup": false,
+    "modifiers": [],
+    "parameters": []
+  }
+]

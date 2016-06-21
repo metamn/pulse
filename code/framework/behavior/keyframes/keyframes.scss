@@ -1,0 +1,10 @@
+// keyframes
+//
+// https://developer.mozilla.org/en/docs/Web/CSS/@keyframes
+//
+// Styleguide keyframes
+@mixin keyframes($animation) {
+  @keyframes #{$animation} {
+    @content;
+  }
+}

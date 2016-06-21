@@ -1,0 +1,11 @@
+@mixin bullet {
+  cursor: pointer;
+  margin-right: $lem / 2;
+
+  // By default all are inactive
+  @include bullet--inactive
+
+  &--active {
+    @include bullet--active;
+  }
+}

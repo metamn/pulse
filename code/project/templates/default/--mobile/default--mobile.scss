@@ -1,0 +1,12 @@
+// Do not overflow fix for mobile browsers
+// - http://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers
+//
+// Works well on Chrome, on Firefox not really
+//
+@mixin default--mobile {
+  .container {
+    @include mobile {
+      overflow-x: hidden;
+    }
+  }
+}

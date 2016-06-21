@@ -1,0 +1,9 @@
+@mixin slider__slides {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+
+  .slide {
+    @include slide;
+  }
+}

@@ -1,0 +1,31 @@
+// Figure
+//
+// Displaying images in a responsive and retina friendly way using the [Picturefill library](http://scottjehl.github.io/picturefill/).
+//
+// $stretch - `stretched` images are taking as much space as possible even if they have to be magnified; `fluid` images are taking as much space
+// as possible without being magnified
+// $preloading - when `true` a loading indicator will be displayed, usually a spinning image
+// $placeholder-color - if not `false` a solid color background will be displayed until the image is loaded
+// $figcaption - when `off` the figcaption won't be displayed; when `on` it will be displayed
+//
+// Styleguide figure
+@mixin figure($stretch: fluid, $preloading: false, $placeholder-color: false, $figcaption: off) {
+  figcaption,
+  .figcaption{
+    @include figure__figcaption($figcaption);
+  }
+
+  img,
+  .img {
+    @include img($stretch, $preloading, $placeholder-color);
+  }
+
+
+  @if ($preloading == true) {
+    @include figure--preloading($placeholder-color);
+  }
+
+  &--loaded {
+    @include figure--loaded;
+  }
+}

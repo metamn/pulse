@@ -1,0 +1,17 @@
+@mixin x-link-with-icon {
+  .link-with-icon {
+    @include link-with-icon;
+
+    &--twitter {
+      margin-top: $lem;
+
+      .icon {
+        @include icon($lem * 2, $lem * 2, $blue);
+      }
+
+      .link {
+        @include link(blue-on-white, black-on-white);
+      }
+    }
+  }
+}

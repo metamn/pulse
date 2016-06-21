@@ -1,0 +1,13 @@
+@mixin x-icon {
+  .title {
+    display: flex;
+  }
+
+  .icon {
+    @include icon;
+
+    &--facebook {
+      @include icon($color: $blue);
+    }
+  }
+}

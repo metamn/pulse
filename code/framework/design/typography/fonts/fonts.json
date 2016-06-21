@@ -1,0 +1,60 @@
+{
+  "fonts": [
+    {
+      "name": "Roboto",
+      "description": "The default typeface",
+      "family": "sans-serif",
+      "character_set": "Latin, Latin extended",
+      "served_from": "Google",
+      "google_font_id": "Roboto",
+      "styles": [
+        {
+          "name": "Normal",
+          "weight": "400",
+          "style": "normal",
+          "id": "400"
+        },
+        {
+          "name": "Normal italic",
+          "weight": "400",
+          "style": "italic",
+          "id": "400italic"
+        },
+        {
+          "name": "Bold",
+          "weight": "700",
+          "style": "normal",
+          "id": "700"
+        },
+        {
+          "name": "Bold italic",
+          "weight": "700",
+          "style": "italic",
+          "id": "700italic"
+        }
+      ]
+    },
+    {
+      "name": "Lato",
+      "description": "The headings typeface",
+      "family": "sans-serif",
+      "character_set": "Latin, Latin extended",
+      "served_from": "Google",
+      "google_font_id": "Lato",
+      "styles": [
+        {
+          "name": "Light",
+          "weight": "300",
+          "style": "normal",
+          "id": "300"
+        },
+        {
+          "name": "Ultra Bold",
+          "weight": "900",
+          "style": "normal",
+          "id": "900"
+        }
+      ]
+    }
+  ]
+}

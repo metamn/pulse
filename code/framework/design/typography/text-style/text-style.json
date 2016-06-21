@@ -1,0 +1,54 @@
+{
+  "text_styles": [
+    {
+      "name": "Default",
+      "description": "The basic settings for a text.",
+      "based_on": "Roboto",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "roboto-normal"
+        },
+        {
+          "name": "scale",
+          "value": "default"
+        },
+        {
+          "name": "colors",
+          "value": "black-on-white"
+        }
+      ]
+    },
+    {
+      "name": "Body text",
+      "description": "Settings for long text blocks.",
+      "based_on": "Roboto",
+      "mixins": [
+        {
+          "name": "p"
+        }
+      ],
+      "properties": [
+        {
+          "name": "max-width",
+          "value": "25em"
+        }
+      ]
+    },
+    {
+      "name": "Heading",
+      "description": "Settings for headings.",
+      "based_on": "Lato",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "lato-light"
+        },
+        {
+          "name": "scale",
+          "value": "default"
+        }
+      ]
+    }
+  ]
+}

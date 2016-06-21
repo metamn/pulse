@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Semantic HTML5 Titles",
+    "description": "<p>The HTML5 structure should outline well in the <a href=\"https://gsnedders.html5.org/\">HTML5 Outliner</a>.\nFor that all content is wrapped into semantic HTML5 elements like <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code> etc.\nThese semantic HTML5 elements must have a title to display well in the Outliner but they must hidden on the UI.\nThis mixin hides by default the titles of semantic HTML5 elements</p>\n",
+    "deprecated": false,
+    "experimental": false,
+    "reference": "semantic-html5-titles",
+    "depth": 1,
+    "weight": 0,
+    "referenceURI": "semantic-html5-titles",
+    "markup": false,
+    "modifiers": [],
+    "parameters": []
+  }
+]

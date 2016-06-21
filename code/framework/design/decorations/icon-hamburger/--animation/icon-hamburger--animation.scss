@@ -1,0 +1,36 @@
+@mixin icon-hamburger--animation($direction, $height) {
+  $rotate: 45deg;
+  $translate: $height;
+  $scale: 2;
+  $border: thinner;
+
+  .line-1 {
+    @include animation(iconHamburgerLine1-#{$direction}, $direction: $direction);
+    @include keyframes(iconHamburgerLine1-#{$direction}) {
+      to {
+        transform: rotate($rotate) translateY($translate) scale($scale);
+        @include border($border);
+      }
+    }
+  }
+
+  .line-3 {
+    @include animation(iconHamburgerLine3-#{$direction}, $direction: $direction);
+    @include keyframes(iconHamburgerLine3-#{$direction}) {
+      to {
+        transform: rotate(-$rotate) translateY(-$translate) scale($scale);
+        @include border($border);
+      }
+    }
+  }
+
+  .line-2 {
+    @include animation(iconHamburgerLine2-#{$direction}, $direction: $direction);
+    @include keyframes(iconHamburgerLine2-#{$direction}) {
+      to {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  }
+}

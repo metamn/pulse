@@ -1,0 +1,17 @@
+// Animation
+//
+// https://www.smashingmagazine.com/2011/05/an-introduction-to-css3-keyframe-animations/
+// https://css-tricks.com/almanac/properties/a/animation/
+// https://codepen.io/rachsmith/post/lets-talk-about-ease-please
+//
+// Styleguide animation
+@mixin animation($keyframe, $duration: 0.3s, $easing: ease-out, $continuous: false, $direction: normal) {
+  animation-name: $keyframe;
+  animation-duration: $duration;
+  animation-direction: $direction;
+  animation-timing-function: $easing;
+
+  @if ($continuous == false) {
+    animation-fill-mode: forwards;
+  }
+}

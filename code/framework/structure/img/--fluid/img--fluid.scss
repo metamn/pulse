@@ -1,0 +1,9 @@
+// Fluid image
+//
+// A fluid image will not fill the available space, if the space is larger than the image it will have a blank border around
+//
+// Styleguide fluid-image
+@mixin img--fluid {
+  max-width: 100%;
+  max-height: 100%;
+}

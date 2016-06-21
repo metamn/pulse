@@ -1,0 +1,22 @@
+// Link with icon
+//
+// Displays an icon and the icon name as a link.
+// There are no params this time. Both the icon and the link can be styled separately.
+//
+// Styleguide link-with-icon
+@mixin link-with-icon {
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+
+  &__icon {
+    @include icon;
+    margin-right: $lem / 4;
+  }
+
+  &__link {
+    .link {
+      @include link;
+    }
+  }
+}

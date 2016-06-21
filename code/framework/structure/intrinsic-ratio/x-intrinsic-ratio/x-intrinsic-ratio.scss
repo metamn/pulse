@@ -1,0 +1,27 @@
+@mixin x-intrinsic-ratio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__title {
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  &--simple,
+  &--with-image {
+    flex-basis: 45%;
+  }
+
+  &--simple {
+    @include x-intrinsic-ratio--simple;
+  }
+
+  &--with-image {
+    @include x-intrinsic-ratio--with-image;
+  }
+
+  &--with-image-stretched {
+    @include x-intrinsic-ratio--with-image-stretched;
+  }
+}

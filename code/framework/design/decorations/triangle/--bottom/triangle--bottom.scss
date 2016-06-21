@@ -1,0 +1,4 @@
+@mixin triangle--bottom($size, $color) {
+  border-width: $size $size 0 $size;
+  border-color: $color transparent transparent transparent;
+}

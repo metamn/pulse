@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Flexbox reset",
+    "description": "<p>Making Flexbox working seamlessly in all browsers\nUses the following fixes:</p>\n<ul>\n<li><a href=\"http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x\">http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x</a></li>\n<li><a href=\"https://github.com/philipwalton/flexbugs\">https://github.com/philipwalton/flexbugs</a></li>\n</ul>\n",
+    "deprecated": false,
+    "experimental": false,
+    "reference": "flexbox-reset",
+    "depth": 1,
+    "weight": 0,
+    "referenceURI": "flexbox-reset",
+    "markup": false,
+    "modifiers": [],
+    "parameters": []
+  }
+]

@@ -1,0 +1,17 @@
+@mixin border($type: normal, $position: bottom) {
+   @if ($type == normal) {
+    @include border--normal($position);
+  }
+
+  @if ($type == thin) {
+    @include border--thin($position);
+  }
+
+  @if ($type == thinner) {
+    @include border--thinner($position);
+  }
+
+  @if ($type == thick) {
+    @include border--thick($position);
+  }
+}

@@ -1,0 +1,25 @@
+// Link
+//
+// Basic Link styling. It deals only with colors. Decorations are handled separately.
+// Basic link styling is not trivial but [CSS Tricks](https://css-tricks.com/almanac/selectors/v/visited/) has a good overview.
+//
+// $color-scheme - The background and foreground colors
+// $color-scheme-hover - The background and foreground colors on hover
+// $color-scheme-visited - The background and foreground colors of visited links
+// $color-scheme-visited-hover - The background and foreground colors of visited links on hover
+//
+// Experimental - Visited links are not working well across browsers
+//
+// Styleguide link
+@mixin link($color-scheme: none, $color-scheme-hover: none, $color-scheme-visited: none, $color-scheme-visited-hover: none) {
+  display: inline-flex;
+
+  &:link {
+    @if ($color-scheme != none) {
+      @include colors($color-scheme);
+    }
+  }
+
+  @include link--visited($color-scheme-visited, $color-scheme-visited-hover);
+  @include link--hover($color-scheme-hover);
+}

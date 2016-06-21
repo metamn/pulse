@@ -1,0 +1,9 @@
+// Stretched image
+//
+// A stretched image will fill the available space even if it has to be magnified
+//
+// Styleguide stretched-image
+@mixin img--stretched {
+  width: 100%;
+  height: auto;
+}

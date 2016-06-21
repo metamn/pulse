@@ -1,0 +1,15 @@
+// Fullscreen inline SVG
+//
+// A big inline SVG can span multiple pages by default which makes it ugly.
+// To stick to a single page we will have to set it's width and height.
+//
+// Styleguide fullscreen-inline-svg
+@mixin svg-inline--fullscreen {
+  height: 100vh;
+
+  svg,
+  .svg {
+    width: 100%;
+    height: 100%;
+  }
+}

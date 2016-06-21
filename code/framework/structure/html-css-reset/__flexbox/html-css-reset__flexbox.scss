@@ -1,0 +1,12 @@
+// Flexbox reset
+//
+// Making Flexbox working seamlessly in all browsers
+// Uses the following fixes:
+// - http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x
+// - https://github.com/philipwalton/flexbugs
+//
+// Styleguide flexbox-reset
+@mixin html-css-reset__flexbox {
+  * { min-height: 0 }
+  * { min-width: 0 }
+}

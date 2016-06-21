@@ -1,0 +1,11 @@
+@mixin x-img--stretched {
+  @include colors(white-on-black);
+
+  .title {
+    display: flex;
+  }
+
+  .img {
+    @include img($stretch: stretched);
+  }
+}

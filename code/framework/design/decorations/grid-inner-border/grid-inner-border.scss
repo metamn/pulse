@@ -1,0 +1,37 @@
+// Grid inner border
+//
+// Adds border around grid items. The outmost borders are not displayed
+//
+// $items-per-row - how many items are in a row
+// $max-items-to-display - the total number of grid items (mandatory !)
+//
+// Example: grid-inner-border(3, 6)
+//  1 | 2 | 3
+//  ---------
+//  4 | 5 | 6
+//
+// Styleguide grid-inner-border
+@mixin grid-inner-border($items-per-row, $max-items-to-display) {
+  > * {
+    @include border--normal(right);
+    @include border--normal(bottom);
+
+    // Remove some right borders
+    &:nth-child(#{$items-per-row}n),
+    &:last-child {
+      border-right: 0;
+    }
+
+    // Remove some bottom borders
+    $remove: $max-items-to-display % $items-per-row;
+    @if ($remove == 0) {
+      $remove: $items-per-row;
+    }
+
+    @for $i from 1 to $remove + 1 {
+      &:nth-last-child(#{$i}) {
+        border-bottom: 0;
+      }
+    }
+  }
+}

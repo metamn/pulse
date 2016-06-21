@@ -1,0 +1,10 @@
+@mixin x-intrinsic-ratio--with-image {
+  .title {
+    display: flex;
+  }
+
+  .figure {
+    @include intrinsic-ratio(1, 1, '.img');
+    @include figure;
+  }
+}
