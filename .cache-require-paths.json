@@ -769,7 +769,10 @@
     "/home/cs/work/pulse/code/project/links/links.json": "/home/cs/work/pulse/code/project/links/links.json",
     "/home/cs/work/pulse/code/project/link/__title/link__title.json": "/home/cs/work/pulse/code/project/link/__title/link__title.json",
     "/home/cs/work/pulse/code/project/link/__number/link__number.json": "/home/cs/work/pulse/code/project/link/__number/link__number.json",
-    "/home/cs/work/pulse/code/framework/design/typography/elements/footnote/footnote.json": "/home/cs/work/pulse/code/framework/design/typography/elements/footnote/footnote.json"
+    "/home/cs/work/pulse/code/framework/design/typography/elements/footnote/footnote.json": "/home/cs/work/pulse/code/framework/design/typography/elements/footnote/footnote.json",
+    "/home/cs/work/pulse/code/project/intro/intro.json": "/home/cs/work/pulse/code/project/intro/intro.json",
+    "/home/cs/work/pulse/code/project/logo/logo.json": "/home/cs/work/pulse/code/project/logo/logo.json",
+    "/home/cs/work/pulse/code/project/about/about.json": "/home/cs/work/pulse/code/project/about/about.json"
   },
   "/home/cs/work/pulse/node_modules/gulp-image-resize/index.js": {
     "gulp-gm": "/home/cs/work/pulse/node_modules/gulp-gm/index.js",

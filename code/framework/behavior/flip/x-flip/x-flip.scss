@@ -1,0 +1,5 @@
+@mixin x-flip {
+  .flip {
+    @include glip;
+  }
+}

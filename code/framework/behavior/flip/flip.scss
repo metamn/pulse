@@ -1,0 +1,23 @@
+// Flip
+//
+// Flip effect over a text. Based on this [Codrops article](http://tympanus.net/Development/CreativeLinkEffects/).
+//
+// Styleguide flip
+@mixin flip {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  &__span {
+    @include flip__span;
+  };
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include flip--hover;
+  }
+}

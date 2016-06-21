@@ -1,0 +1,18 @@
+@mixin intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @include colors(white-on-black);
+  padding: 5vh 5vw;
+  min-height: 40vh;
+
+
+  .about {
+    @include about;
+  }
+
+  .logo {
+    @include logo(white-on-black);
+  }
+}

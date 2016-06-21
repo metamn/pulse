@@ -1,0 +1,10 @@
+@mixin x-link-with-fliptext {
+  .link {
+    @include link(blue-on-white, black-on-white, black-on-white);
+    margin: $lem;
+  }
+
+  .flip {
+    @include flip;
+  }
+}
