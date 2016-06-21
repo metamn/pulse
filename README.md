@@ -1,7 +1,4 @@
-# Specless
+# Gmail's 'To Clients' to a website of links
 
-Live website: http://cascade.specless.io/sitebuild/
-
-- [INSTALL.md](INSTALL.md)
-- [DEPLOY.md](DEPLOY.md)
-- [TECHNOLOGIES.md](TECHNOLOGIES.md)
+- Gmail API cannot handle custom labels: https://developers.google.com/gmail/api/v1/reference/users/labels/get#examples
+- IFTT can handle only new items added 'To Clients'

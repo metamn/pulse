@@ -12,7 +12,8 @@
     "./tasks/scss.js": "/home/cs/work/pulse/tools/gulp/tasks/scss.js",
     "./tasks/server.js": "/home/cs/work/pulse/tools/gulp/tasks/server.js",
     "./tasks/sitemap.js": "/home/cs/work/pulse/tools/gulp/tasks/sitemap.js",
-    "./tasks/swig.js": "/home/cs/work/pulse/tools/gulp/tasks/swig.js"
+    "./tasks/swig.js": "/home/cs/work/pulse/tools/gulp/tasks/swig.js",
+    "./tasks/gmail.js": "/home/cs/work/pulse/tools/gulp/tasks/gmail.js"
   },
   "/home/cs/work/pulse/tools/gulp/tasks/archives.js": {
     "gulp": "/home/cs/work/pulse/node_modules/gulp/index.js",
@@ -5655,5 +5656,89 @@
   },
   "/home/cs/work/pulse/node_modules/webpack/lib/CachePlugin.js": {
     "async": "/home/cs/work/pulse/node_modules/webpack/node_modules/async/lib/async.js"
+  },
+  "/home/cs/work/pulse/tools/gulp/tasks/gmail.js": {
+    "gulp": "/home/cs/work/pulse/node_modules/gulp/index.js",
+    "node-mbox": "/home/cs/work/pulse/node_modules/node-mbox/src/mbox.js",
+    "fs": "fs",
+    "mailparser": "/home/cs/work/pulse/node_modules/mailparser/lib/mailparser.js"
+  },
+  "/home/cs/work/pulse/node_modules/node-mbox/src/mbox.js": {
+    "stream": "stream",
+    "streamsearch": "/home/cs/work/pulse/node_modules/streamsearch/lib/sbmh.js",
+    "util": "util",
+    "fs": "fs",
+    "isstream": "/home/cs/work/pulse/node_modules/isstream/isstream.js"
+  },
+  "/home/cs/work/pulse/node_modules/streamsearch/lib/sbmh.js": {
+    "events": "events",
+    "util": "util"
+  },
+  "/home/cs/work/pulse/node_modules/isstream/isstream.js": {
+    "stream": "stream"
+  },
+  "/home/cs/work/pulse/node_modules/mailparser/lib/mailparser.js": {
+    "stream": "stream",
+    "util": "util",
+    "mimelib": "/home/cs/work/pulse/node_modules/mimelib/index.js",
+    "./datetime": "/home/cs/work/pulse/node_modules/mailparser/lib/datetime.js",
+    "encoding": "/home/cs/work/pulse/node_modules/encoding/lib/encoding.js",
+    "./streams": "/home/cs/work/pulse/node_modules/mailparser/lib/streams.js",
+    "crypto": "crypto",
+    "mime": "/home/cs/work/pulse/node_modules/mailparser/node_modules/mime/mime.js"
+  },
+  "/home/cs/work/pulse/node_modules/mimelib/index.js": {
+    "./lib/mimelib": "/home/cs/work/pulse/node_modules/mimelib/lib/mimelib.js",
+    "./lib/content-types": "/home/cs/work/pulse/node_modules/mimelib/lib/content-types.js",
+    "./lib/content-types-reversed": "/home/cs/work/pulse/node_modules/mimelib/lib/content-types-reversed.js"
+  },
+  "/home/cs/work/pulse/node_modules/mimelib/lib/mimelib.js": {
+    "encoding": "/home/cs/work/pulse/node_modules/encoding/lib/encoding.js",
+    "addressparser": "/home/cs/work/pulse/node_modules/addressparser/src/addressparser.js"
+  },
+  "/home/cs/work/pulse/node_modules/encoding/lib/encoding.js": {
+    "iconv-lite": "/home/cs/work/pulse/node_modules/iconv-lite/lib/index.js",
+    "./iconv-loader": "/home/cs/work/pulse/node_modules/encoding/lib/iconv-loader.js"
+  },
+  "/home/cs/work/pulse/node_modules/iconv-lite/lib/index.js": {
+    "./bom-handling": "/home/cs/work/pulse/node_modules/iconv-lite/lib/bom-handling.js",
+    "./streams": "/home/cs/work/pulse/node_modules/iconv-lite/lib/streams.js",
+    "./extend-node": "/home/cs/work/pulse/node_modules/iconv-lite/lib/extend-node.js",
+    "../encodings": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/index.js"
+  },
+  "/home/cs/work/pulse/node_modules/iconv-lite/lib/streams.js": {
+    "stream": "stream"
+  },
+  "/home/cs/work/pulse/node_modules/encoding/lib/iconv-loader.js": {},
+  "/home/cs/work/pulse/node_modules/mailparser/lib/streams.js": {
+    "stream": "stream",
+    "util": "util",
+    "mimelib": "/home/cs/work/pulse/node_modules/mimelib/index.js",
+    "encoding": "/home/cs/work/pulse/node_modules/encoding/lib/encoding.js",
+    "crypto": "crypto",
+    "uue": "/home/cs/work/pulse/node_modules/uue/uue.js"
+  },
+  "/home/cs/work/pulse/node_modules/uue/uue.js": {
+    "fs": "fs",
+    "path": "path",
+    "extend": "/home/cs/work/pulse/node_modules/extend/index.js"
+  },
+  "/home/cs/work/pulse/node_modules/mailparser/node_modules/mime/mime.js": {
+    "path": "path",
+    "fs": "fs",
+    "./types.json": "/home/cs/work/pulse/node_modules/mailparser/node_modules/mime/types.json"
+  },
+  "/home/cs/work/pulse/node_modules/iconv-lite/encodings/index.js": {
+    "./internal": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/internal.js",
+    "./utf16": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/utf16.js",
+    "./utf7": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/utf7.js",
+    "./sbcs-codec": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/sbcs-codec.js",
+    "./sbcs-data": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/sbcs-data.js",
+    "./sbcs-data-generated": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/sbcs-data-generated.js",
+    "./dbcs-codec": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/dbcs-codec.js",
+    "./dbcs-data": "/home/cs/work/pulse/node_modules/iconv-lite/encodings/dbcs-data.js"
+  },
+  "/home/cs/work/pulse/node_modules/iconv-lite/encodings/internal.js": {
+    "string_decoder": "string_decoder"
   }
 }
