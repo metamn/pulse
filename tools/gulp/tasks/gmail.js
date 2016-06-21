@@ -13,6 +13,7 @@ var extractLink = function(text) {
 
 var parseMBOX = function(source, dest) {
   fs.openSync(dest, 'w');
+  fs.appendFileSync(dest, '[');
 
   var mailbox = fs.createReadStream(source);
   var mbox    = new Mbox(mailbox, { /* options */ });
@@ -30,9 +31,9 @@ var parseMBOX = function(source, dest) {
       json += "},";
       fs.appendFileSync(dest, json);
 
-      console.log("Date:", mail_object.date);
-      console.log("Subject:", mail_object.subject);
-      console.log("Link:", link);
+      //console.log("Date:", mail_object.date);
+      //console.log("Subject:", mail_object.subject);
+      //console.log("Link:", link);
     });
 
     mailparser.write(msg);
@@ -41,6 +42,21 @@ var parseMBOX = function(source, dest) {
 }
 
 
-gulp.task('gmail', function() {
+
+gulp.task('createFile', function() {
   parseMBOX('to-clients.mbox', 'code/links.json');
+});
+
+gulp.task('closeFile', function() {
+  // for some reason it's not working
+  fs.appendFileSync('code/links.json', '{}]');
+});
+
+
+gulp.task('gmail', function(cb) {
+  runSequence(
+    'createFile',
+    'closeFile',
+    cb
+  );
 });
