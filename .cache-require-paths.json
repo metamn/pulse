@@ -4699,7 +4699,8 @@
     "../utils/onError": "/home/cs/work/pulse/tools/gulp/utils/onError.js",
     "../utils/getJSONData": "/home/cs/work/pulse/tools/gulp/utils/getJSONData.js",
     "./../config": "/home/cs/work/pulse/tools/gulp/config.js",
-    "../../../code/config.json": "/home/cs/work/pulse/code/config.json"
+    "../../../code/config.json": "/home/cs/work/pulse/code/config.json",
+    "../../../code/links.json": "/home/cs/work/pulse/code/links.json"
   },
   "/home/cs/work/pulse/node_modules/gulp-swig/index.js": {
     "event-stream": "/home/cs/work/pulse/node_modules/event-stream/index.js",

@@ -10,6 +10,10 @@ var extractLink = function(text) {
   return text.split('\n')[0];
 }
 
+var sanitizeSubject = function(text) {
+  return text.replace(/['"]+/g, '');
+}
+
 
 var parseMBOX = function(source, dest) {
   fs.openSync(dest, 'w');
@@ -23,23 +27,39 @@ var parseMBOX = function(source, dest) {
 
     mailparser.on("end", function(mail_object){
       var link = extractLink(mail_object.text);
+      var subject = sanitizeSubject(mail_object.subject);
 
       var json = '{';
       json += '"date":"' + mail_object.date + '"';
-      json +=',"subject":"' + mail_object.subject + '"';
+      json +=',"subject":"' + subject + '"';
       json +=',"link":"' + link + '"';
       json += "},";
+      json += '\n\r';
       fs.appendFileSync(dest, json);
-
-      //console.log("Date:", mail_object.date);
-      //console.log("Subject:", mail_object.subject);
-      //console.log("Link:", link);
     });
 
     mailparser.write(msg);
     mailparser.end();
   });
+
+  mbox.on('end', function(msg) {
+    fs.readFile(dest, 'utf8', function (err,data) {
+      if (err) {
+        return console.log(err);
+      }
+
+      fs.appendFile(dest, '{}]', function (err) {
+        if (err) {
+          return console.log(err);
+        }
+      });
+    });
+  });
 }
+
+gulp.task('gmail', function() {
+  parseMBOX('to-clients.mbox', 'code/links.json');
+});
 
 
 
@@ -48,12 +68,12 @@ gulp.task('createFile', function() {
 });
 
 gulp.task('closeFile', function() {
-  // for some reason it's not working
   fs.appendFileSync('code/links.json', '{}]');
 });
 
 
-gulp.task('gmail', function(cb) {
+
+gulp.task('gmail2', function(cb) {
   runSequence(
     'createFile',
     'closeFile',
