@@ -59,8 +59,12 @@
     {
       "name": "Title",
       "description": "Title",
-      "based_on": "Nimbus Sans",
+      "based_on": "Nimbus Sans Bold",
       "mixins": [
+        {
+          "name": "font",
+          "value": "nimbus-sans-bold"
+        },
         {
           "name": "scale",
           "value": "large-4"
@@ -79,6 +83,23 @@
               "value": "large-3"
             }
           ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "max-width",
+          "value": "35em"
+        }
+      ]
+    },
+    {
+      "name": "Date",
+      "description": "Sate",
+      "based_on": "Nimbus Sans Black",
+      "mixins": [
+        {
+          "name": "font",
+          "value": "nimbus-sans-black"
         }
       ]
     }

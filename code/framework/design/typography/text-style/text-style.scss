@@ -52,9 +52,11 @@ $text-block-width: 25em;
   // Title
   // - Title
   @if ($variant == 'title') {
+    @include font(nimbus-sans-bold);
     @include scale(large-4);
     @include word-wrap;
     
+    max-width: 35em;
     
     
     @include mobile {
@@ -62,6 +64,15 @@ $text-block-width: 25em;
       
       
     }
+    
+  }
+  
+  // Date
+  // - Sate
+  @if ($variant == 'date') {
+    @include font(nimbus-sans-black);
+    
+    
     
   }
   
@@ -97,9 +108,11 @@ $text-block-width: 25em;
 }
 
 .text-style--title {
+  @include font(nimbus-sans-bold);
   @include scale(large-4);
   @include word-wrap;
   
+  max-width: 35em;
   
   
   @include mobile {
@@ -107,6 +120,13 @@ $text-block-width: 25em;
     
     
   }
+  
+}
+
+.text-style--date {
+  @include font(nimbus-sans-black);
+  
+  
   
 }
 

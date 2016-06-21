@@ -1,7 +1,16 @@
 @mixin link {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+
   padding: 5vh 5vw;
+  @include border(normal, bottom);
 
   &__title {
     @include link__title;
+  }
+
+  &__date {
+    @include link__date;
   }
 }
