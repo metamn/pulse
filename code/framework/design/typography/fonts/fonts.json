@@ -1,58 +1,50 @@
 {
   "fonts": [
     {
-      "name": "Roboto",
+      "name": "Nimbus Sans",
       "description": "The default typeface",
       "family": "sans-serif",
-      "character_set": "Latin, Latin extended",
-      "served_from": "Google",
-      "google_font_id": "Roboto",
-      "styles": [
-        {
-          "name": "Normal",
-          "weight": "400",
-          "style": "normal",
-          "id": "400"
-        },
-        {
-          "name": "Normal italic",
-          "weight": "400",
-          "style": "italic",
-          "id": "400italic"
-        },
-        {
-          "name": "Bold",
-          "weight": "700",
-          "style": "normal",
-          "id": "700"
-        },
-        {
-          "name": "Bold italic",
-          "weight": "700",
-          "style": "italic",
-          "id": "700italic"
-        }
-      ]
-    },
-    {
-      "name": "Lato",
-      "description": "The headings typeface",
-      "family": "sans-serif",
-      "character_set": "Latin, Latin extended",
-      "served_from": "Google",
-      "google_font_id": "Lato",
+      "character_set": "Full character set, with OpenType Features",
+      "served_from": "Typekit",
       "styles": [
         {
           "name": "Light",
           "weight": "300",
-          "style": "normal",
-          "id": "300"
+          "style": "normal"
         },
         {
-          "name": "Ultra Bold",
+          "name": "Light Italic",
+          "weight": "300",
+          "style": "italic"
+        },
+        {
+          "name": "Regular",
+          "weight": "400",
+          "style": "normal"
+        },
+        {
+          "name": "Bold",
+          "weight": "700",
+          "style": "normal"
+        },
+        {
+          "name": "Black",
           "weight": "900",
-          "style": "normal",
-          "id": "900"
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "name": "Silkscreen",
+      "description": "The logo typeface",
+      "family": "sans-serif",
+      "character_set": "English, with OpenType Features",
+      "served_from": "Typekit",
+      "styles": [
+        {
+          "name": "Regular",
+          "weight": "400",
+          "style": "normal"
         }
       ]
     }

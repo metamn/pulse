@@ -8,22 +8,18 @@
 // Styleguide fonts
 
 
-// Roboto
+// Nimbus Sans
 // - The default typeface, sans-serif
-// - character set: Latin, Latin extended
-// - served from Google
-// - styles and weights: Normal, Normal italic, Bold, Bold italic, 
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,);
+// - character set: Full character set, with OpenType Features
+// - served from Typekit
+// - styles and weights: Light, Light Italic, Regular, Bold, Black, 
 
 
-// Lato
-// - The headings typeface, sans-serif
-// - character set: Latin, Latin extended
-// - served from Google
-// - styles and weights: Light, Ultra Bold, 
-
-@import url(https://fonts.googleapis.com/css?family=Lato:300,900,);
+// Silkscreen
+// - The logo typeface, sans-serif
+// - character set: English, with OpenType Features
+// - served from Typekit
+// - styles and weights: Regular, 
 
 
 
@@ -31,39 +27,39 @@
 // The font mixin
 @mixin font($variant) {
 
-  @if ($variant == 'roboto-normal') {
-    font-family: 'roboto', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @if ($variant == 'roboto-normal-italic') {
-    font-family: 'roboto', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  @if ($variant == 'roboto-bold') {
-    font-family: 'roboto', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  @if ($variant == 'roboto-bold-italic') {
-    font-family: 'roboto', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  @if ($variant == 'lato-light') {
-    font-family: 'lato', sans-serif;
+  @if ($variant == 'nimbus-sans-light') {
+    font-family: 'nimbus-sans', sans-serif;
     font-weight: 300;
     font-style: normal;
   }
   
-  @if ($variant == 'lato-ultra-bold') {
-    font-family: 'lato', sans-serif;
+  @if ($variant == 'nimbus-sans-light-italic') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @if ($variant == 'nimbus-sans-regular') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'nimbus-sans-bold') {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'nimbus-sans-black') {
+    font-family: 'nimbus-sans', sans-serif;
     font-weight: 900;
+    font-style: normal;
+  }
+  
+  @if ($variant == 'silkscreen-regular') {
+    font-family: 'silkscreen', sans-serif;
+    font-weight: 400;
     font-style: normal;
   }
   
@@ -72,39 +68,39 @@
 
 // Font classes
 
-.roboto-normal {
-  font-family: 'roboto', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-normal-italic {
-  font-family: 'roboto', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-bold {
-  font-family: 'roboto', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-bold-italic {
-  font-family: 'roboto', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.lato-light {
-  font-family: 'lato', sans-serif;
+.nimbus-sans-light {
+  font-family: 'nimbus-sans', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.lato-ultra-bold {
-  font-family: 'lato', sans-serif;
+.nimbus-sans-light-italic {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.nimbus-sans-regular {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nimbus-sans-bold {
+  font-family: 'nimbus-sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nimbus-sans-black {
+  font-family: 'nimbus-sans', sans-serif;
   font-weight: 900;
+  font-style: normal;
+}
+
+.silkscreen-regular {
+  font-family: 'silkscreen', sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 

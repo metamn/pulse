@@ -14,7 +14,7 @@
 // - served from {{ font.served_from }}
 // - styles and weights: {% for style in font.styles %}{{ style.name }}, {% endfor %}
 {% if font.served_from == "Google" %}
-@import url(https://fonts.googleapis.com/css?family={{ font.google_font_id }}:{% for style in font.styles %}{{ style.id }},{% endfor %});
+@import url(http://fonts.googleapis.com/css?family={{ font.google_font_id }}:{% for style in font.styles %}{{ style.id }},{% endfor %});
 {% endif %}
 {% endfor %}
 

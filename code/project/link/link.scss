@@ -1,0 +1,7 @@
+@mixin link {
+  padding: 5vh 5vw;
+
+  &__title {
+    @include link__title;
+  }
+}

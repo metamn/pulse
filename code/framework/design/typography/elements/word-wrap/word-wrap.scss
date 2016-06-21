@@ -1,0 +1,6 @@
+@mixin word-wrap {
+  // flexbox hack
+  // - http://jsfiddle.net/6aohg6dq/2/
+  // - doesn't working ...
+  word-wrap: break-word;
+}

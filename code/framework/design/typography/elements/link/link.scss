@@ -12,7 +12,7 @@
 //
 // Styleguide link
 @mixin link($color-scheme: none, $color-scheme-hover: none, $color-scheme-visited: none, $color-scheme-visited-hover: none) {
-  display: inline-flex;
+  @include word-wrap;
 
   &:link {
     @if ($color-scheme != none) {

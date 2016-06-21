@@ -17,12 +17,17 @@
   }
 
   // Remove the extra bottom spacing for <img> inside <a>
-  figure a {
+  a img {
     line-height: 0;
     display: block;
   }
 
-  button {
+  figure a {
+    display: block;
+  }
+
+  button,
+  input[type="submit"] {
     border: none;
     margin: 0;
     padding: 0;

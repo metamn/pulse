@@ -9,7 +9,7 @@
 // - it is based on the default font size and line height
 // - $lem is used for spacing elements on the webpage like margins and padding
 
-$lem: 1.25em;
+$lem: 1.48em;
 
 
 
@@ -20,7 +20,70 @@ $lem: 1.25em;
   // The default font size and line height
   @if ($variant == 'default') {
     font-size: 100%;
-    line-height: 1.25;
+    line-height: 1.48;
+    
+    
+  }
+
+  // Smaller than default font size with 1 scale
+  @if ($variant == 'small-1') {
+    font-size: 0.75em;
+    
+    
+  }
+
+  // Larger than default font size with 1 scale
+  @if ($variant == 'large-1') {
+    font-size: 1.333em;
+    
+    
+  }
+
+  // Larger than default font size with 2 scalse
+  @if ($variant == 'large-2') {
+    font-size: 1.777em;
+    
+    
+  }
+
+  // Larger than default font size with 3 scales
+  @if ($variant == 'large-3') {
+    font-size: 2.369em;
+    
+    
+  }
+
+  // Larger than default font size with 4 scales
+  @if ($variant == 'large-4') {
+    font-size: 3.157em;
+    
+    
+  }
+
+  // Larger than default font size with 5 scales
+  @if ($variant == 'large-5') {
+    font-size: 4.209em;
+    
+    
+  }
+
+  // Larger than default font size with 6 scales
+  @if ($variant == 'large-6') {
+    font-size: 5.61em;
+    
+    
+  }
+
+  // Larger than default font size with 7 scales
+  @if ($variant == 'large-7') {
+    font-size: 7.478em;
+    
+    
+  }
+
+  // Larger than default font size with 8 scales
+  @if ($variant == 'large-8') {
+    font-size: 9.969em;
     
     
   }
@@ -32,7 +95,61 @@ $lem: 1.25em;
 
 .scale--default {
   font-size: 100%;
-  line-height: 1.25;
+  line-height: 1.48;
+  
+  
+}
+
+.scale--small-1 {
+  font-size: 0.75em;
+  
+  
+}
+
+.scale--large-1 {
+  font-size: 1.333em;
+  
+  
+}
+
+.scale--large-2 {
+  font-size: 1.777em;
+  
+  
+}
+
+.scale--large-3 {
+  font-size: 2.369em;
+  
+  
+}
+
+.scale--large-4 {
+  font-size: 3.157em;
+  
+  
+}
+
+.scale--large-5 {
+  font-size: 4.209em;
+  
+  
+}
+
+.scale--large-6 {
+  font-size: 5.61em;
+  
+  
+}
+
+.scale--large-7 {
+  font-size: 7.478em;
+  
+  
+}
+
+.scale--large-8 {
+  font-size: 9.969em;
   
   
 }

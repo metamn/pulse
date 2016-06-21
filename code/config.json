@@ -8,6 +8,10 @@
   "javascripts": {
     "header": [
       {
+       "file": "https://use.typekit.net/syb1owt.js",
+       "type": "external"
+      },
+      {
         "file": "vendors.js"
       }
     ],

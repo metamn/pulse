@@ -230,13 +230,15 @@
     "stream": "stream",
     "core-util-is": "/home/cs/work/pulse/node_modules/core-util-is/lib/util.js",
     "inherits": "/home/cs/work/pulse/node_modules/inherits/inherits.js",
-    "util": "util"
+    "util": "util",
+    "./_stream_duplex": "/home/cs/work/pulse/node_modules/duplexer2/node_modules/readable-stream/lib/_stream_duplex.js"
   },
   "/home/cs/work/pulse/node_modules/duplexer2/node_modules/readable-stream/lib/_stream_writable.js": {
     "buffer": "buffer",
     "core-util-is": "/home/cs/work/pulse/node_modules/core-util-is/lib/util.js",
     "inherits": "/home/cs/work/pulse/node_modules/inherits/inherits.js",
-    "stream": "stream"
+    "stream": "stream",
+    "./_stream_duplex": "/home/cs/work/pulse/node_modules/duplexer2/node_modules/readable-stream/lib/_stream_duplex.js"
   },
   "/home/cs/work/pulse/node_modules/duplexer2/node_modules/readable-stream/lib/_stream_duplex.js": {
     "core-util-is": "/home/cs/work/pulse/node_modules/core-util-is/lib/util.js",
@@ -762,7 +764,12 @@
     "/home/cs/work/pulse/code/framework/design/typography/fonts/fonts.json": "/home/cs/work/pulse/code/framework/design/typography/fonts/fonts.json",
     "/home/cs/work/pulse/code/framework/design/typography/scale/scale.json": "/home/cs/work/pulse/code/framework/design/typography/scale/scale.json",
     "/home/cs/work/pulse/code/framework/design/typography/text-style/text-style.json": "/home/cs/work/pulse/code/framework/design/typography/text-style/text-style.json",
-    "/home/cs/work/pulse/code/framework/design/decorations/icon/x-icon/x-icon.json": "/home/cs/work/pulse/code/framework/design/decorations/icon/x-icon/x-icon.json"
+    "/home/cs/work/pulse/code/framework/design/decorations/icon/x-icon/x-icon.json": "/home/cs/work/pulse/code/framework/design/decorations/icon/x-icon/x-icon.json",
+    "/home/cs/work/pulse/code/project/link/link.json": "/home/cs/work/pulse/code/project/link/link.json",
+    "/home/cs/work/pulse/code/project/links/links.json": "/home/cs/work/pulse/code/project/links/links.json",
+    "/home/cs/work/pulse/code/project/link/__title/link__title.json": "/home/cs/work/pulse/code/project/link/__title/link__title.json",
+    "/home/cs/work/pulse/code/project/link/__number/link__number.json": "/home/cs/work/pulse/code/project/link/__number/link__number.json",
+    "/home/cs/work/pulse/code/framework/design/typography/elements/footnote/footnote.json": "/home/cs/work/pulse/code/framework/design/typography/elements/footnote/footnote.json"
   },
   "/home/cs/work/pulse/node_modules/gulp-image-resize/index.js": {
     "gulp-gm": "/home/cs/work/pulse/node_modules/gulp-gm/index.js",
@@ -1227,7 +1234,8 @@
     "buffer": "buffer",
     "core-util-is": "/home/cs/work/pulse/node_modules/core-util-is/lib/util.js",
     "inherits": "/home/cs/work/pulse/node_modules/inherits/inherits.js",
-    "stream": "stream"
+    "stream": "stream",
+    "./_stream_duplex": "/home/cs/work/pulse/node_modules/ternary-stream/node_modules/readable-stream/lib/_stream_duplex.js"
   },
   "/home/cs/work/pulse/node_modules/fork-stream/index.js": {
     "stream": "stream"
@@ -1266,7 +1274,8 @@
     "buffer": "buffer",
     "core-util-is": "/home/cs/work/pulse/node_modules/core-util-is/lib/util.js",
     "inherits": "/home/cs/work/pulse/node_modules/inherits/inherits.js",
-    "stream": "stream"
+    "stream": "stream",
+    "./_stream_duplex": "/home/cs/work/pulse/node_modules/merge-stream/node_modules/readable-stream/lib/_stream_duplex.js"
   },
   "/home/cs/work/pulse/node_modules/gulp-if/node_modules/through2/through2.js": {
     "readable-stream/transform": "/home/cs/work/pulse/node_modules/gulp-if/node_modules/readable-stream/transform.js",
@@ -2421,7 +2430,8 @@
     "buffer": "buffer",
     "core-util-is": "/home/cs/work/pulse/node_modules/core-util-is/lib/util.js",
     "inherits": "/home/cs/work/pulse/node_modules/inherits/inherits.js",
-    "stream": "stream"
+    "stream": "stream",
+    "./_stream_duplex": "/home/cs/work/pulse/node_modules/gulp-concat/node_modules/readable-stream/lib/_stream_duplex.js"
   },
   "/home/cs/work/pulse/node_modules/concat-with-sourcemaps/index.js": {
     "source-map": "/home/cs/work/pulse/node_modules/concat-with-sourcemaps/node_modules/source-map/source-map.js"

@@ -1,0 +1,9 @@
+@mixin link__title {
+  display: flex;
+
+  a {
+    @include colors(black-on-white);
+    @include text-style(title);
+  }
+
+}

@@ -20,16 +20,17 @@ $text-block-width: 25em;
   // Default
   // - The basic settings for a text.
   @if ($variant == 'default') {
-    @include font(roboto-normal);
+    @include font(nimbus-sans-regular);
     @include scale(default);
     @include colors(black-on-white);
     
+    letter-spacing: 1.1px;
     
     
   }
   
   // Body text
-  // - Settings for long text blocks.
+  // - Settings for text blocks.
   @if ($variant == 'body-text') {
     @include p;
     
@@ -38,13 +39,29 @@ $text-block-width: 25em;
     
   }
   
-  // Heading
-  // - Settings for headings.
-  @if ($variant == 'heading') {
-    @include font(lato-light);
-    @include scale(default);
+  // Metamn
+  // - Settings for the Metamn logo.
+  @if ($variant == 'metamn') {
+    @include font(silkscreen-regular);
+    @include scale(large-1);
     
     
+    
+  }
+  
+  // Title
+  // - Title
+  @if ($variant == 'title') {
+    @include scale(large-4);
+    @include word-wrap;
+    
+    
+    
+    @include mobile {
+      @include scale(large-3);
+      
+      
+    }
     
   }
   
@@ -54,10 +71,11 @@ $text-block-width: 25em;
 // Text style classes
 
 .text-style--default {
-  @include font(roboto-normal);
+  @include font(nimbus-sans-regular);
   @include scale(default);
   @include colors(black-on-white);
   
+  letter-spacing: 1.1px;
   
   
 }
@@ -70,11 +88,25 @@ $text-block-width: 25em;
   
 }
 
-.text-style--heading {
-  @include font(lato-light);
-  @include scale(default);
+.text-style--metamn {
+  @include font(silkscreen-regular);
+  @include scale(large-1);
   
   
+  
+}
+
+.text-style--title {
+  @include scale(large-4);
+  @include word-wrap;
+  
+  
+  
+  @include mobile {
+    @include scale(large-3);
+    
+    
+  }
   
 }
 

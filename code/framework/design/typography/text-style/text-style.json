@@ -3,11 +3,11 @@
     {
       "name": "Default",
       "description": "The basic settings for a text.",
-      "based_on": "Roboto",
+      "based_on": "Nimbus Sans",
       "mixins": [
         {
           "name": "font",
-          "value": "roboto-normal"
+          "value": "nimbus-sans-regular"
         },
         {
           "name": "scale",
@@ -17,12 +17,18 @@
           "name": "colors",
           "value": "black-on-white"
         }
+      ],
+      "properties": [
+        {
+          "name": "letter-spacing",
+          "value": "1.1px"
+        }
       ]
     },
     {
       "name": "Body text",
-      "description": "Settings for long text blocks.",
-      "based_on": "Roboto",
+      "description": "Settings for text blocks.",
+      "based_on": "Nimbus Sans",
       "mixins": [
         {
           "name": "p"
@@ -36,17 +42,43 @@
       ]
     },
     {
-      "name": "Heading",
-      "description": "Settings for headings.",
-      "based_on": "Lato",
+      "name": "Metamn",
+      "description": "Settings for the Metamn logo.",
+      "based_on": "Silkscreen",
       "mixins": [
         {
           "name": "font",
-          "value": "lato-light"
+          "value": "silkscreen-regular"
         },
         {
           "name": "scale",
-          "value": "default"
+          "value": "large-1"
+        }
+      ]
+    },
+    {
+      "name": "Title",
+      "description": "Title",
+      "based_on": "Nimbus Sans",
+      "mixins": [
+        {
+          "name": "scale",
+          "value": "large-4"
+        },
+        {
+          "name": "word-wrap",
+          "value": ""
+        }
+      ],
+      "responsive": [
+        {
+          "breakpoint": "mobile",
+          "mixins": [
+            {
+              "name": "scale",
+              "value": "large-3"
+            }
+          ]
         }
       ]
     }
