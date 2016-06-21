@@ -5661,7 +5661,8 @@
     "gulp": "/home/cs/work/pulse/node_modules/gulp/index.js",
     "node-mbox": "/home/cs/work/pulse/node_modules/node-mbox/src/mbox.js",
     "fs": "fs",
-    "mailparser": "/home/cs/work/pulse/node_modules/mailparser/lib/mailparser.js"
+    "mailparser": "/home/cs/work/pulse/node_modules/mailparser/lib/mailparser.js",
+    "run-sequence": "/home/cs/work/pulse/node_modules/run-sequence/index.js"
   },
   "/home/cs/work/pulse/node_modules/node-mbox/src/mbox.js": {
     "stream": "stream",

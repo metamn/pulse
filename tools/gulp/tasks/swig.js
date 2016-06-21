@@ -42,6 +42,8 @@ var _swig = function(source, dest, config, grabJSON) {
         locals: {
           // Load site-wide JSON settings
           site: require(config),
+          // Load links
+          links: require('../../../code/links.json')
         }
       }
     }))
