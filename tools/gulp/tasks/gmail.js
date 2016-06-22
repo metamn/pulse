@@ -34,6 +34,7 @@ var parseMBOX = function(source, dest) {
       json +=',"subject":"' + subject + '"';
       json +=',"link":"' + link + '"';
       json += "},";
+      json += "\n\r";
       fs.appendFileSync(dest, json);
     });
 
