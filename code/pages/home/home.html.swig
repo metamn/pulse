@@ -3,5 +3,5 @@
 
   {% include '../../project/intro/intro.html.swig' %}
   {% include '../../project/links/links.html.swig' %}
-
+  {% include '../../project/footer/footer.html.swig' %}
 {% endblock %}

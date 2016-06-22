@@ -9,13 +9,17 @@ html {
     body {
       display: flex;
       flex-direction: column;
-      
+
       .intro {
         @include intro;
       }
 
       .links {
         @include links;
+      }
+
+      .footer {
+        @include footer;
       }
     }
   }
