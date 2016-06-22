@@ -16,7 +16,7 @@
     <link href="{{ site.url }}{{ site.styles }}site.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
     {{ scripts | safe }}
 
-    {% include '__favicon/head__favicon.html.swig' %}
+    {% include '__favicon/--extended/head__favicon--extended.html.swig' %}
   </head>
 
   <body>
