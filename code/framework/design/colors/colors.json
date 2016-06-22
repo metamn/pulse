@@ -9,6 +9,11 @@
       "name": "black",
       "value": "#000",
       "description": "Main color"
+    },
+    {
+      "name": "blue",
+      "value": "#4916DA",
+      "description": "Main color"
     }
   ],
   "color_pairs": [

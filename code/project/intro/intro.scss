@@ -5,7 +5,9 @@
 
   @include colors(white-on-black);
   padding: 5vh 5vw;
-  min-height: 40vh;
+
+  @include intro--portrait;
+  @include intro--landscape;
 
 
   .about {

@@ -12,6 +12,9 @@ $white: #fff;
 // Main color
 $black: #000;
 
+// Main color
+$blue: #4916DA;
+
 
 // Color combinations. Colors are not used standalone but in pairs
 @mixin colors($name) {
@@ -38,6 +41,10 @@ $black: #000;
 
 .black {
   background: #000;
+};
+
+.blue {
+  background: #4916DA;
 };
 
 
