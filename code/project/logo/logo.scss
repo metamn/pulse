@@ -1,9 +1,6 @@
 @mixin logo($colors: black-on-white) {
-
   .link {
     @include colors($colors);
-    padding: 0 !important;
-    border: none !important;
   }
 
   .flip {

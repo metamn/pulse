@@ -11,9 +11,9 @@
       "description": "Main color"
     },
     {
-      "name": "blue",
-      "value": "#4916DA",
-      "description": "Main color"
+      "name": "gray",
+      "value": "#999",
+      "description": "Secondary color"
     }
   ],
   "color_pairs": [
@@ -36,6 +36,19 @@
         {
           "name": "color",
           "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "$white"
+        }
+      ]
+    },
+    {
+      "name": "gary-on-white",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$gray"
         },
         {
           "name": "background-color",

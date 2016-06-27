@@ -1,8 +1,12 @@
 @mixin articles {
   display: flex;
   flex-wrap: wrap;
-  
-  .link {
-    @include link;
+
+  @include landscape {
+    @include grid(2, 0px, $lem);
+  }
+
+  .article {
+    @include article;
   }
 }

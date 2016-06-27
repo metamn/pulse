@@ -775,7 +775,10 @@
     "/home/cs/work/pulse/code/project/about/about.json": "/home/cs/work/pulse/code/project/about/about.json",
     "/home/cs/work/pulse/code/project/footer/footer.json": "/home/cs/work/pulse/code/project/footer/footer.json",
     "/home/cs/work/pulse/code/project/templates/head/__favicon/@assets/images/favicon-16x16.json": "/home/cs/work/pulse/code/project/templates/head/__favicon/@assets/images/favicon-16x16.json",
-    "/home/cs/work/pulse/code/project/templates/head/__favicon/@assets/images/favicon-32x32.json": "/home/cs/work/pulse/code/project/templates/head/__favicon/@assets/images/favicon-32x32.json"
+    "/home/cs/work/pulse/code/project/templates/head/__favicon/@assets/images/favicon-32x32.json": "/home/cs/work/pulse/code/project/templates/head/__favicon/@assets/images/favicon-32x32.json",
+    "/home/cs/work/pulse/code/project/articles/articles.json": "/home/cs/work/pulse/code/project/articles/articles.json",
+    "/home/cs/work/pulse/code/project/article/__number/article__number.json": "/home/cs/work/pulse/code/project/article/__number/article__number.json",
+    "/home/cs/work/pulse/code/project/article/__title/article__title.json": "/home/cs/work/pulse/code/project/article/__title/article__title.json"
   },
   "/home/cs/work/pulse/node_modules/gulp-image-resize/index.js": {
     "gulp-gm": "/home/cs/work/pulse/node_modules/gulp-gm/index.js",

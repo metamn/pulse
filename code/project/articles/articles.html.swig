@@ -1,11 +1,11 @@
 <section class="articles">
-  <h3>Links</h3>
+  <h3>Articles</h3>
 
-  {% set total = articles.length %}
+  {% set total = links.length %}
 
-  {% for link in articles | reverse %}
+  {% for article in links | reverse %}
     {% if !loop.first %}
-      {% include "../link/link.html.swig" %}
+      {% include "../article/article.html.swig" %}
     {% endif %}
   {% endfor %}
 </section>

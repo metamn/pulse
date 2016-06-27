@@ -2,6 +2,6 @@
 {% block content %}
 
   {% include '../../project/intro/intro.html.swig' %}
-  {% include '../../project/links/links.html.swig' %}
+  {% include '../../project/articles/articles.html.swig' %}
   {% include '../../project/footer/footer.html.swig' %}
 {% endblock %}

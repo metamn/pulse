@@ -1,12 +1,9 @@
 @mixin article__title {
+  @include text-style(title);
   display: flex;
+  margin: $lem 0;
 
-  a {
-    @include colors(black-on-white);
-    @include text-style(title);
-    
-    border: none !important;
-    padding-left: 0 !important;
+  .link {
+    @include link(black-on-white, black-on-white, gray-on-white);
   }
-
 }
