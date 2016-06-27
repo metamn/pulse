@@ -1,0 +1,56 @@
+// Arrow ith triangle
+//
+// Done in pure CSS
+//
+// $size - starting from $lem * 2. As th size goes above $lem * 3 the line thickness must be increased
+//
+// Styleguide arrow-with-triangle
+@mixin arrow-with-triangle($direction: right, $size: $lem * 3, $color: $black) {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  width: $size;
+
+  &__line {
+    width: calc(#{$size - $size / 6});
+    @include border;
+  }
+
+  &__triangle {
+    @include triangle($direction: $direction, $size: $size / 6, $color: $color);
+  }
+
+  @if ($direction == right) {
+    @include arrow-with-triangle--right;
+  }
+
+  @if ($direction == left) {
+    @include arrow-with-triangle--left;
+  }
+
+  @if ($direction == top) {
+    @include arrow-with-triangle--top;
+  }
+
+  @if ($direction == bottom) {
+    @include arrow-with-triangle--bottom;
+  }
+
+  &--right {
+    @include arrow-with-triangle--right;
+  }
+
+  &--left {
+    @include arrow-with-triangle--left;
+  }
+
+  &--top {
+    @include arrow-with-triangle--top;
+  }
+
+  &--bottom {
+    @include arrow-with-triangle--bottom;
+  }
+}

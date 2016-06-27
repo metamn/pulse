@@ -3,6 +3,9 @@
 
   {% set link = { 'title': site.title, 'url': site.url, 'type': 'external', 'klass': 'flip pulse' } %}
   {% include '../logo/logo.html.swig' %}
-  
+
   {% include '../about/about.html.swig' %}
+
+  {% set direction = "bottom" %}
+  {% include '../../framework/design/decorations/arrow-with-triangle/arrow-with-triangle.html.swig' %}
 </section>

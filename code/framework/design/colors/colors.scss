@@ -12,8 +12,8 @@ $white: #fff;
 // Main color
 $black: #000;
 
-// Main color
-$blue: #4916DA;
+// Secondary color
+$gray: #999;
 
 
 // Color combinations. Colors are not used standalone but in pairs
@@ -31,6 +31,12 @@ $blue: #4916DA;
     
   }
 
+  @if ($name == 'gary-on-white') {
+    color: $gray;
+    background-color: $white;
+    
+  }
+
 }
 
 // Color classes
@@ -43,8 +49,8 @@ $blue: #4916DA;
   background: #000;
 };
 
-.blue {
-  background: #4916DA;
+.gray {
+  background: #999;
 };
 
 
@@ -58,6 +64,12 @@ $blue: #4916DA;
 
 .black-on-white {
   color: $black;
+  background-color: $white;
+  
+}
+
+.gary-on-white {
+  color: $gray;
   background-color: $white;
   
 }

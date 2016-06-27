@@ -1,5 +1,4 @@
 <h3 class="article__title">
-  {% set l = { title: article.subject, url: article.article, type: "external" } %}
-  {% set link= l %}
+  {% set link = { title: article.subject, url: article.link, type: "external" } %}
   {% include "../../../framework/design/typography/elements/link/link.html.swig" %}
 </h3>

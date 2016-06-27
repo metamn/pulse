@@ -1,0 +1,11 @@
+@mixin x-arrow-with-triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .arrow-with-triangle {
+    @include arrow-with-triangle;
+    margin: $lem;
+  }
+}

@@ -1,0 +1,5 @@
+@mixin articles--landscape {
+  @include landscape {
+    @include grid(2, 0px, $lem);
+  }
+}

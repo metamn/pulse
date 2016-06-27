@@ -3,11 +3,10 @@
   flex-direction: column;
   justify-content: space-around;
 
-  @include colors(white-on-black);
+  min-height: 100vh;
   padding: 5vh 5vw;
 
-  @include intro--portrait;
-  @include intro--landscape;
+  @include border(normal, bottom);
 
 
   .about {
@@ -15,6 +14,10 @@
   }
 
   .logo {
-    @include logo(white-on-black);
+    @include logo;
+  }
+
+  .arrow-with-triangle {
+    @include arrow-with-triangle;
   }
 }

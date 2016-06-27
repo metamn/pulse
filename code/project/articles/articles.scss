@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include landscape {
-    @include grid(2, 0px, $lem);
-  }
+  @include articles--landscape;
 
   .article {
     @include article;
