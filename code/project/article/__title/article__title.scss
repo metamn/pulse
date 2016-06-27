@@ -1,0 +1,12 @@
+@mixin article__title {
+  display: flex;
+
+  a {
+    @include colors(black-on-white);
+    @include text-style(title);
+    
+    border: none !important;
+    padding-left: 0 !important;
+  }
+
+}

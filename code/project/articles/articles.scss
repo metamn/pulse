@@ -1,0 +1,8 @@
+@mixin articles {
+  display: flex;
+  flex-wrap: wrap;
+  
+  .link {
+    @include link;
+  }
+}

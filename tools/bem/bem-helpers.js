@@ -15,6 +15,29 @@ var jsonExt = '.json';
 //
 var fs = require('fs');
 var mkdirp = require('mkdirp');
+var recursive = require('recursive-readdir');
+
+
+
+// Rename files & BEM objects
+var renameFiles = function(folder, oldName, newName) {
+  recursive(folder, function (err, files) {
+    if (err) throw err;
+    if (files) {
+      for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+
+        var content = fs.readFileSync(file, 'utf8');
+        var reg = new RegExp(oldName, 'g');
+        var result = content.replace(reg, newName);
+        var newFile = file.replace(reg, newName);
+
+        fs.writeFileSync(newFile, result, 'utf8');
+        fs.unlinkSync(file);
+      }
+    }
+  });
+}
 
 
 
@@ -97,5 +120,6 @@ module.exports = {
   makeFile: makeFile,
   makeFiles: makeFiles,
   makeClass: makeClass,
-  getLastItem: getLastItem
+  getLastItem: getLastItem,
+  renameFiles: renameFiles
 };

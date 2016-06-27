@@ -5,6 +5,20 @@
 // Modules
 //
 var helpers = require('./bem-helpers');
+var ncp = require('ncp').ncp;
+
+
+// Rename a BEM object
+var renameBEM = function(oldPath, newPath) {
+  var oldName = helpers.getLastItem(oldPath, "/");
+  var newName = helpers.getLastItem(newPath, "/");
+
+  ncp(oldPath, newPath, function (err) {
+    if (err) throw err;
+    console.log(oldPath + " renamed to " + newPath);
+    helpers.renameFiles(newPath, oldName, newName);
+  });
+}
 
 
 // Create a level
@@ -12,7 +26,6 @@ var helpers = require('./bem-helpers');
 var makeLevel = function(path) {
   helpers.makeFolder(path);
 }
-
 
 
 // Create a block
@@ -77,4 +90,5 @@ module.exports = {
   makeBlock: makeBlock,
   makeElement: makeElement,
   makeModifier: makeModifier,
+  renameBEM: renameBEM,
 };

@@ -44,6 +44,10 @@ switch (object) {
   case 'm':
     commands.makeModifier(path, name);
     break;
+  case 'rename':
+  case 'r':
+    commands.renameBEM(path, name);
+    break;
   default:
     console.log('Wrong arguments: ' + object);
 }
