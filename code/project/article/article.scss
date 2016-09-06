@@ -12,4 +12,8 @@
   &__date {
     @include article__date;
   }
+
+  &__number {
+    @include article__number;
+  }
 }
