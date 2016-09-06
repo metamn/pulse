@@ -5,6 +5,6 @@
 
   .link {
     @include link(black-on-white);
-    @include link-linethrough;
+    //@include link-linethrough;
   }
 }
