@@ -8,7 +8,7 @@
 // $color-scheme-visited - The background and foreground colors of visited links
 // $color-scheme-visited-hover - The background and foreground colors of visited links on hover
 //
-// Experimental - Visited links are not working well across browsers
+// Experimental - External links are styled by the browser, internal links are working fine
 //
 // Styleguide link
 @mixin link($color-scheme: none, $color-scheme-hover: none, $color-scheme-visited: none, $color-scheme-visited-hover: none) {
