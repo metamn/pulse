@@ -6,8 +6,9 @@
     {% include '../logo/logo.html.swig' %}
   {% endfor %}
 
-
   {% include '../about/about.html.swig' %}
+
+  {% include '../arrows/arrows.html.swig' %}
 
   {% include "../years/years.html.swig" %}
 </section>

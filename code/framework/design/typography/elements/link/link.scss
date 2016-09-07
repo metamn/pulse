@@ -16,7 +16,6 @@
   &:link {
     @if ($color-scheme != none) {
       @include colors($color-scheme);
-      text-decoration: underline;
     }
   }
 

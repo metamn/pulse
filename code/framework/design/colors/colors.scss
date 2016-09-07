@@ -13,7 +13,7 @@ $white: #fff;
 $black: #000;
 
 // Secondary color
-$gray: #999;
+$gray: #666;
 
 
 // Color combinations. Colors are not used standalone but in pairs
@@ -37,9 +37,9 @@ $gray: #999;
     
   }
 
-  @if ($name == 'gray-on-transparent') {
+  @if ($name == 'gray-on-white') {
     color: $gray;
-    background-color: transparent;
+    background-color: $white;
     
   }
 
@@ -56,7 +56,7 @@ $gray: #999;
 };
 
 .gray {
-  background: #999;
+  background: #666;
 };
 
 
@@ -80,9 +80,9 @@ $gray: #999;
   
 }
 
-.gray-on-transparent {
+.gray-on-white {
   color: $gray;
-  background-color: transparent;
+  background-color: $white;
   
 }
 

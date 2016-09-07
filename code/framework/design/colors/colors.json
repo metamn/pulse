@@ -12,7 +12,7 @@
     },
     {
       "name": "gray",
-      "value": "#999",
+      "value": "#666",
       "description": "Secondary color"
     }
   ],
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "name": "gray-on-transparent",
+      "name": "gray-on-white",
       "properties": [
         {
           "name": "color",
@@ -65,7 +65,7 @@
         },
         {
           "name": "background-color",
-          "value": "transparent"
+          "value": "$white"
         }
       ]
     }

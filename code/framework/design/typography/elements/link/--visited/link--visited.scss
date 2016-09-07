@@ -7,7 +7,6 @@
   @if ($color-scheme != none) {
     &:visited {
       @include colors($color-scheme);
-      text-decoration: line-through;
     }
   }
 
