@@ -1,0 +1,21 @@
+@mixin article-colors {
+  .year--2016 {
+    //background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGUlEQVQYlWNgGAYgLS3t/0C7gaogLS3tPwDU1ARjU86v3AAAAABJRU5ErkJggg==);
+    //background-color: blanchedalmond;
+  }
+
+  .year--2015 {
+    //background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGklEQVQYlWNgIAWkpaX9J0nDKCALpKWl/QcAH9kEY4j0q5YAAAAASUVORK5CYII=);
+    //background-color: cyan;
+  }
+
+  .year--2014 {
+    //background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVQYlWNgGAV0A2lpaf+JVggAZJ0EYxRKcFoAAAAASUVORK5CYII=);
+    //background-color: darkorange;
+  }
+
+  .year--2013 {
+    //background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYlWNgGAnA2Nj4P3UU0Q8AAP1FAzFEKQnlAAAAAElFTkSuQmCC);
+    //background-color: khaki;
+  }
+}

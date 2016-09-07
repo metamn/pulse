@@ -15,5 +15,7 @@ html {
     @include semantic-html5-titles;
     @include typography-reset;
     @include text-style(default);
+
+    @include article-colors;
   }
 }
