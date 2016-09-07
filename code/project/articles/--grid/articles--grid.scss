@@ -1,0 +1,9 @@
+@mixin articles--grid {
+  @include portrait {
+    @include grid(1, 0px, 0px);
+  }
+
+  @include landscape {
+    @include grid(2, 0px, 0px);
+  }
+}

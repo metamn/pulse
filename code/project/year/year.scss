@@ -6,14 +6,16 @@
 
   &__title {
     display: flex;
-    @include text-style(title);
-    margin-right: $lem;
+    @include year__title;
   }
 
   .ul {
     @include ul;
     @include ul--underlined;
 
-    width: 100%;
+    // stretch ul to fill available space
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
   }
 }

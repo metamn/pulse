@@ -1,6 +1,8 @@
 <section class="intro">
   <h3>Intro</h3>
 
+  {% include '../about/about.html.swig' %}
+
   {% set link = { 'title': site.title, 'url': site.url, 'type': 'external', 'klass': 'flip pulse' } %}
   {% for year in years %}
     {% include '../logo/logo.html.swig' %}

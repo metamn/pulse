@@ -1,7 +1,19 @@
 @mixin about {
+  display: flex;
+  position: absolute;
   padding: 5vh 0;
-  
+
+  // to make a grid like Years
+  &__spacer {
+    @include year__title;
+    visibility: hidden;
+  }
+
   &__text {
     @include text-style(body-text);
+
+    @include mobile-and-up {
+      @include scale(large-1);
+    }
   }
 }

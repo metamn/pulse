@@ -1,6 +1,10 @@
 <article class="about">
   <h3>About</h3>
 
+  <div class="about__spacer">
+    2016
+  </div>
+
   <div class="about__text">
     {{ about | safe }}
   </div>

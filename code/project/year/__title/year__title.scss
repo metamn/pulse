@@ -1,0 +1,9 @@
+@mixin year__title {
+  @include text-style(title);
+
+  margin-right: $lem;
+
+  @include mobile {
+    margin-right: $lem / 2;
+  }
+}
