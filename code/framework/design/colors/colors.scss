@@ -31,9 +31,15 @@ $gray: #999;
     
   }
 
-  @if ($name == 'gary-on-white') {
+  @if ($name == 'black-on-transparent') {
+    color: $black;
+    background-color: transparent;
+    
+  }
+
+  @if ($name == 'gray-on-transparent') {
     color: $gray;
-    background-color: $white;
+    background-color: transparent;
     
   }
 
@@ -68,9 +74,15 @@ $gray: #999;
   
 }
 
-.gary-on-white {
+.black-on-transparent {
+  color: $black;
+  background-color: transparent;
+  
+}
+
+.gray-on-transparent {
   color: $gray;
-  background-color: $white;
+  background-color: transparent;
   
 }
 

@@ -1,4 +1,4 @@
-@mixin logo($colors: black-on-white) {
+@mixin logo($colors: black-on-transparent) {
   .link {
     @include colors($colors);
   }

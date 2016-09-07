@@ -44,7 +44,20 @@
       ]
     },
     {
-      "name": "gary-on-white",
+      "name": "black-on-transparent",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$black"
+        },
+        {
+          "name": "background-color",
+          "value": "transparent"
+        }
+      ]
+    },
+    {
+      "name": "gray-on-transparent",
       "properties": [
         {
           "name": "color",
@@ -52,7 +65,7 @@
         },
         {
           "name": "background-color",
-          "value": "$white"
+          "value": "transparent"
         }
       ]
     }

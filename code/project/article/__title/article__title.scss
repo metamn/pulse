@@ -5,7 +5,6 @@
   margin: $lem 0;
 
   .link {
-    @include link(black-on-white);
-    //@include link-linethrough;
+    @include link(black-on-transparent, black-on-transparent, gray-on-transparent, black-on-transparent);
   }
 }
