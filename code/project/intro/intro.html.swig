@@ -6,6 +6,5 @@
 
   {% include '../about/about.html.swig' %}
 
-  {% set direction = "bottom" %}
-  {% include '../../framework/design/decorations/arrow-with-triangle/arrow-with-triangle.html.swig' %}
+  {% include "../years/years.html.swig" %}
 </section>

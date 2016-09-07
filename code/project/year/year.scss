@@ -1,0 +1,19 @@
+@mixin year {
+  display: flex;
+  align-items: flex-end;
+
+  margin-bottom: $lem * 2;
+
+  &__title {
+    display: flex;
+    @include text-style(title);
+    margin-right: $lem;
+  }
+
+  .ul {
+    @include ul;
+    @include ul--underlined;
+
+    width: 100%;
+  }
+}

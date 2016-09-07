@@ -1,4 +1,35 @@
 {
   "title": "Home",
-  "about": "A curated list of articles about and around web design and development."
+  "about": "A curated list of articles about and around web design and development.",
+  "years": [
+    {
+      "year": "2013",
+      "topics": [
+        "Responsive web design"
+      ]
+    },
+    {
+      "year": "2014",
+      "topics": [
+        "Styleguides",
+        "Storytelling",
+        "Usability / UX"
+      ]
+    },
+    {
+      "year": "2015",
+      "topics": [
+        "Web vs. Native",
+        "Static websites",
+        "Web components"
+      ]
+    },
+    {
+      "year": "2016",
+      "topics": [
+        "Animation",
+        "Frameworks"
+      ]
+    }
+  ]
 }

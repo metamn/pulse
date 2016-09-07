@@ -1,0 +1,5 @@
+@mixin years {
+  .year {
+    @include year;
+  }
+}

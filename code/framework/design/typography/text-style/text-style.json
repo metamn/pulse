@@ -94,7 +94,7 @@
     },
     {
       "name": "Date",
-      "description": "Sate",
+      "description": "Date",
       "based_on": "Nimbus Sans Black",
       "mixins": [
         {
