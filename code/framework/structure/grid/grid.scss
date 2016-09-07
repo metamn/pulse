@@ -12,7 +12,8 @@
   $item-width: percentage(1 / $items-per-row);
 
   > * {
-    flex-basis: calc(#{$item-width} - (((#{$items-per-row} - 1) * #{$margin-right}) / #{$items-per-row}));
+    // do not use flex-basis: https://github.com/philipwalton/flexbugs#7-flex-basis-doesnt-account-for-box-sizingborder-box
+    width: calc(#{$item-width} - (((#{$items-per-row} - 1) * #{$margin-right}) / #{$items-per-row}));
     margin-right: $margin-right;
     margin-bottom: $margin-bottom;
 
