@@ -1,0 +1,9 @@
+@mixin spacer {
+  @include background-image-dotted;
+  padding: 5vh 0;
+
+  &__text {
+    @include text-style(body-text);
+    visibility: hidden;
+  }
+}

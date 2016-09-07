@@ -15,6 +15,10 @@
     @include logo;
   }
 
+  .spacer {
+    @include spacer;
+  }
+
   .arrows {
     @include arrows;
   }

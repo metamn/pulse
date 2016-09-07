@@ -1,5 +1,7 @@
 <article class="about">
   <h3>About</h3>
 
-  {{ about | safe }}
+  <div class="about__text">
+    {{ about | safe }}
+  </div>
 </article>

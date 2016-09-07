@@ -1,5 +1,7 @@
 @mixin about {
   padding: 5vh 0;
   
-  @include text-style(body-text);
+  &__text {
+    @include text-style(body-text);
+  }
 }
