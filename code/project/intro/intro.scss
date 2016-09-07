@@ -3,9 +3,8 @@
   flex-direction: column;
   justify-content: space-around;
 
-  height: 100vh;
+  min-height: 100vh;
   padding: 5vh 5vw;
-
   @include border(normal, bottom);
 
   .about {

@@ -1,5 +1,6 @@
 @mixin article__title {
   @include text-style(title);
+
   display: flex;
   margin: $lem 0;
 

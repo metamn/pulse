@@ -1,4 +1,3 @@
 @mixin article__date {
   @include text-style(title);
-  @include text-style(date);
 }

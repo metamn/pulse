@@ -1,4 +1,6 @@
 @mixin years {
+  padding: 5vh 0;
+  
   .year {
     @include year;
   }
