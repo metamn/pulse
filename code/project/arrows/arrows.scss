@@ -1,6 +1,8 @@
 @mixin arrows {
+  display: flex;
+  justify-content: space-between; 
   padding: 5vh 0;
-  
+
   .arrow-with-triangle {
     @include arrow-with-triangle;
   }
