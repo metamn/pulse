@@ -11,9 +11,8 @@
 
   &__text {
     @include text-style(body-text);
-
-    @include mobile-and-up {
-      @include scale(large-1);
-    }
+    @include scale(large-1);
   }
+
+  @include about--mobile;
 }

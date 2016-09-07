@@ -4,6 +4,9 @@
 
   &__text {
     @include text-style(body-text);
+    @include colors(black-on-white);
     visibility: hidden;
   }
+
+  @include spacer--mobile;
 }
