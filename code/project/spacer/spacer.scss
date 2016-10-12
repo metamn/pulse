@@ -1,6 +1,7 @@
 @mixin spacer {
   @include background-image-dotted;
-  padding: 5vh 0;
+  padding: 15vh 0;
+  margin-top: $lem;
 
   &__text {
     @include text-style(body-text);
