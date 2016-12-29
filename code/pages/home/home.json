@@ -1,6 +1,9 @@
 {
   "title": "Home",
   "about": "A curated list of articles about and around web design and development.",
+  "spacer": {
+    "text": "/////////////////////////////////////////////////////////////////////"
+  },
   "years": [
     {
       "year": "2013",

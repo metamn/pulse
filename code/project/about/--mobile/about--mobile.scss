@@ -1,5 +1,9 @@
 @mixin about--mobile {
   @include mobile {
-    display: none;
+    margin-top: $lem * 6;
+    
+    .about__spacer {
+      display: none;
+    }
   }
 }

@@ -1,7 +1,11 @@
-<article class="spacer">
+<aside class="spacer">
   <h3>Spacer</h3>
 
   <div class="spacer__text">
-    {{ about | safe }}
+    {{ spacer.text }}
   </div>
-</article>
+
+  <div class="spacer__chars">
+    {# Will be filled by JS #}
+  </div>
+</aside>

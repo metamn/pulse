@@ -1,8 +1,6 @@
 @mixin spacer--mobile {
   @include mobile {
-    .spacer__text {
-      padding: $lem;
-      visibility: visible;
-    }
+    height: 5vh;
+    margin-bottom: $lem;
   }
 }
