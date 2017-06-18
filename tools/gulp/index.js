@@ -1,7 +1,7 @@
 console.time("Loading plugins"); //start measuring
 
 // Cache require file names
-require('cache-require-paths');
+//require('cache-require-paths');
 
 // Loading all tasks
 var fs = require('fs');

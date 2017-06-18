@@ -43,7 +43,7 @@ var _swig = function(source, dest, config, grabJSON) {
           // Load site-wide JSON settings
           site: require(config),
           // Load links
-          links: require('../../../code/links.json')
+          links: require('../../../code/links-sorted.json')
         }
       }
     }))

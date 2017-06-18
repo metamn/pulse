@@ -3,4 +3,13 @@
 - Gmail API cannot handle custom labels: https://developers.google.com/gmail/api/v1/reference/users/labels/get#examples
 - IFTT can handle only new items added 'To Clients'
 
-The solution is to export the emails (https://takeout.google.com/settings/takeout) and rename `to-clients.mbox`, parse with `gulp gmail`, then generate the site from the `links.json` file
+The solution is to export the emails then prepare with gulp tasks.
+
+Steps:
+
+1. Export: https://takeout.google.com/settings/takeout
+2. rename `to-clients.mbox`
+3. parse with `gulp gmail` which will create `code/links.json`
+4. manually make sure the JSOn syntax is ok
+5. sort with `g sort` which will create `code/links-sorted.json`
+6. generate the site with `g`

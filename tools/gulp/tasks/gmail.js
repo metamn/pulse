@@ -25,16 +25,24 @@ var parseMBOX = function(source, dest) {
   mbox.on('message', function(msg) {
     var mailparser = new MailParser();
 
-    mailparser.on("end", function(mail_object){
-      var link = extractLink(mail_object.text);
-      var subject = sanitizeSubject(mail_object.subject);
+    var date = '';
+    var subject = '';
+    var link = '';
+
+    mailparser.on("headers", function(header) {
+      date = header.get('date');
+      subject = sanitizeSubject(header.get('subject'));
+    });
+
+    mailparser.on("data", function(mail_object){
+      link = extractLink(mail_object.text);
 
       var json = '{';
-      json += '"date":"' + mail_object.date + '"';
-      json +=',"subject":"' + subject + '"';
-      json +=',"link":"' + link + '"';
-      json += "},";
-      json += "\n\r";
+        json += '"date":"' + date + '"';
+        json +=',"subject":"' + subject + '"';
+        json +=',"link":"' + link + '"';
+        json += "},";
+        json += "\n\r";
       fs.appendFileSync(dest, json);
     });
 
@@ -56,6 +64,8 @@ var parseMBOX = function(source, dest) {
     });
   });
 }
+
+
 
 gulp.task('gmail', function() {
   parseMBOX('to-clients.mbox', 'code/links.json');
