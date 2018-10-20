@@ -7,7 +7,20 @@ var gulp = require('gulp'),
 
 
 var extractLink = function(text) {
-  return text.split('\n')[0];
+  if (typeof text !== 'undefined') {
+    split = text.split('\n');
+
+    for (var i = 0; i < split.length; i++ ) {
+      if (split[i].includes('http')) {
+        return split[i];
+      }
+    }
+
+    return 'NOTFOUND';
+
+  } else {
+    return 'UNDEFINED';
+  }
 }
 
 var sanitizeSubject = function(text) {

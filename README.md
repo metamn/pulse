@@ -10,6 +10,6 @@ Steps:
 1. Export: https://takeout.google.com/settings/takeout
 2. Rename `to-clients.mbox`
 3. Parse with `gulp gmail` which will create `code/links.json`
-4. Manually make sure the JSON syntax is ok
+4. Check it online for errors.
 5. Sort with `g sort` which will create `code/links-sorted.json`
 6. Generate the site with `g`
