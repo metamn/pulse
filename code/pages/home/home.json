@@ -7,33 +7,19 @@
   "years": [
     {
       "year": "2013",
-      "topics": [
-        "Responsive web design"
-      ]
+      "topics": ["Responsive web design"]
     },
     {
       "year": "2014",
-      "topics": [
-        "Styleguides",
-        "Storytelling",
-        "Usability / UX"
-      ]
+      "topics": ["Styleguides", "Storytelling", "Usability / UX"]
     },
     {
       "year": "2015",
-      "topics": [
-        "Web vs. Native",
-        "Static websites",
-        "Web components"
-      ]
+      "topics": ["Web vs. Native", "Static websites", "Web components"]
     },
     {
       "year": "2016",
-      "topics": [
-        "Brutalism",
-        "Animation",
-        "Frameworks"
-      ]
+      "topics": ["Brutalism", "Animation", "Frameworks"]
     },
     {
       "year": "2017",
@@ -50,6 +36,10 @@
         "Ad / tech is hostile",
         "Tools for everything"
       ]
+    },
+    {
+      "year": "2019",
+      "topics": ["Design Systems", "Micro architectures", "No code / low code"]
     }
   ]
 }
