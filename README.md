@@ -14,3 +14,10 @@ Steps:
 5. Sort with `g sort` which will create `code/links-sorted.json`
 6. Generate the site with `g`
 7. When deploying to metamn DO NOT DELETE the assets folder with the favicons !!!
+
+Update gulp / packages:
+
+1. `sudo npm install gulp-cli -g`
+2. `sudo npm install gulp -D`
+3. Remove `node_modules`, `package-lock.json`
+4. `sudo npm i`
