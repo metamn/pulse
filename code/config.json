@@ -1,16 +1,12 @@
 {
   "url": "/",
-  "urlx": "http://metamn.io/pulse/",
+  "url": "http://metamn.io/pulse/",
   "title": "Pulse",
   "images": "assets/images/",
   "scripts": "assets/scripts/",
   "styles": "assets/styles/",
   "javascripts": {
     "header": [
-      {
-        "file": "https://use.typekit.net/syb1owt.js",
-        "type": "external"
-      },
       {
         "file": "vendors.js"
       }

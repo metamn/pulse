@@ -8,37 +8,59 @@
 // Styleguide fonts
 
 
+
+
 // Nimbus Sans
 // - The default typeface, sans-serif
 // - character set: Full character set, with OpenType Features
-// - served from Typekit
-// - styles and weights: Light, Light Italic, Regular, Bold, Black, 
+// - served from local
+// - styles and weights: Regular, Bold, Black, 
 
 
 // Silkscreen
 // - The logo typeface, sans-serif
 // - character set: English, with OpenType Features
-// - served from Typekit
+// - served from local
 // - styles and weights: Regular, 
 
 
+
+// Font faces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'nimbus-sans';
+  src: url(/assets/fonts/nimbussanl-reg-webfont.ttf) format("truetype"), url(/assets/fonts/nimbussanl-reg-webfont.woff) format("woff"), url(/assets/fonts/nimbussanl-reg-webfont.woff2) format("woff2");
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'silkscreen';
+  src: url(/assets/fonts/slkscr.ttf) format("truetype");
+}
 
 
 // The font mixin
 @mixin font($variant) {
 
-  @if ($variant == 'nimbus-sans-light') {
-    font-family: 'nimbus-sans', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  @if ($variant == 'nimbus-sans-light-italic') {
-    font-family: 'nimbus-sans', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
   @if ($variant == 'nimbus-sans-regular') {
     font-family: 'nimbus-sans', sans-serif;
     font-weight: 400;
@@ -67,18 +89,6 @@
 
 
 // Font classes
-
-.nimbus-sans-light {
-  font-family: 'nimbus-sans', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.nimbus-sans-light-italic {
-  font-family: 'nimbus-sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
 
 .nimbus-sans-regular {
   font-family: 'nimbus-sans', sans-serif;
