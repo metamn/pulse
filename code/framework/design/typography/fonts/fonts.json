@@ -30,11 +30,6 @@
           "name": "Bold",
           "weight": "700",
           "style": "normal"
-        },
-        {
-          "name": "Black",
-          "weight": "900",
-          "style": "normal"
         }
       ]
     },

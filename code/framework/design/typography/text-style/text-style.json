@@ -95,11 +95,11 @@
     {
       "name": "Date",
       "description": "Date",
-      "based_on": "Nimbus Sans Black",
+      "based_on": "Nimbus Sans Bold",
       "mixins": [
         {
           "name": "font",
-          "value": "nimbus-sans-black"
+          "value": "nimbus-sans-bold"
         }
       ]
     }

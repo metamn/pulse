@@ -70,7 +70,7 @@ $text-block-width: 25em;
   // Date
   // - Date
   @if ($variant == 'date') {
-    @include font(nimbus-sans-black);
+    @include font(nimbus-sans-bold);
     
     
     
@@ -124,7 +124,7 @@ $text-block-width: 25em;
 }
 
 .text-style--date {
-  @include font(nimbus-sans-black);
+  @include font(nimbus-sans-bold);
   
   
   
