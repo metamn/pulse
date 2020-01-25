@@ -13,7 +13,6 @@
     {% include '__meta/head__meta.html.swig' %}
 
     <title>{{ page_title | safe }}</title>
-    <link rel="stylesheet" href="https://use.typekit.net/syb1owt.css">
     <link href="{{ site.url }}{{ site.styles }}site.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
     {{ scripts | safe }}
 
