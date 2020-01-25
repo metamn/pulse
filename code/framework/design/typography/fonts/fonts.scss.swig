@@ -26,7 +26,7 @@
 {% for key, face in font.face %}
 {% set format = face.format %}
 {% set url = face.url %}
-{% set src[key] = 'url(/assets/fonts/' + url + ') format("' + format + '")' %}
+{% set src[key] = 'url(' + site.url + 'assets/fonts/' + url + ') format("' + format + '")' %}
 {% endfor %}
 @font-face {
   font-family: '{{ font_name }}';

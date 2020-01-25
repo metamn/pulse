@@ -33,7 +33,7 @@ module.exports = {
   html_src: sourceCode + "/pages/**/**/*.html",
 
   // Fonts
-  fonts_src: sourceCode + "/**/*.{ttf, woff}",
+  fonts_src: sourceCode + "/**/*.{ttf,woff,woff2}",
   fonts_dest: destination + "/assets/fonts",
 
   // Webpack config file
