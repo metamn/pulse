@@ -58,7 +58,7 @@
   "dependencies": {
     "cache-require-paths": "^0.1.2",
     "google-auth-library": "^0.9.8",
-    "googleapis": "^9.0.0",
+    "googleapis": "^39.1.0",
     "node-gmail-api": "^0.6.1",
     "swig": "^1.4.2"
   }
