@@ -1,9 +1,7 @@
 @mixin intro {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
 
-  min-height: 100vh;
   padding: 5vh 5vw;
   @include border(normal, bottom);
 
@@ -13,17 +11,11 @@
 
   .logo {
     @include logo;
-  }
-
-  .spacer {
-    @include spacer;
-  }
-
-  .arrows {
-    @include arrows;
+    visibility: hidden;
   }
 
   .years {
     @include years;
+    width: 100%;
   }
 }

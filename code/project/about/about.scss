@@ -5,6 +5,7 @@
   &__spacer {
     @include year__title;
     visibility: hidden;
+    margin-right: 0;
   }
 
   &__text {
