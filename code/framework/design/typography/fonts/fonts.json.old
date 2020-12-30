@@ -5,19 +5,22 @@
       "description": "The default typeface",
       "family": "sans-serif",
       "character_set": "Full character set, with OpenType Features",
-      "served_from": "Typekit",
-      "note": "Typekit setup is done a in head.html.swig",
+      "served_from": "local",
+      "face": [
+        {
+          "url": "nimbussanl-reg-webfont.ttf",
+          "format": "truetype"
+        },
+        {
+          "url": "nimbussanl-reg-webfont.woff",
+          "format": "woff"
+        },
+        {
+          "url": "nimbussanl-reg-webfont.woff2",
+          "format": "woff2"
+        }
+      ],
       "styles": [
-        {
-          "name": "Light",
-          "weight": "300",
-          "style": "normal"
-        },
-        {
-          "name": "Light Italic",
-          "weight": "300",
-          "style": "italic"
-        },
         {
           "name": "Regular",
           "weight": "400",
@@ -27,11 +30,6 @@
           "name": "Bold",
           "weight": "700",
           "style": "normal"
-        },
-        {
-          "name": "Black",
-          "weight": "900",
-          "style": "normal"
         }
       ]
     },
@@ -40,7 +38,13 @@
       "description": "The logo typeface",
       "family": "sans-serif",
       "character_set": "English, with OpenType Features",
-      "served_from": "Typekit",
+      "served_from": "local",
+      "face": [
+        {
+          "url": "slkscr.ttf",
+          "format": "truetype"
+        }
+      ],
       "styles": [
         {
           "name": "Regular",

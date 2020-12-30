@@ -1,0 +1,20 @@
+{
+  "url": "/",
+  "urlx": "http://metamn.io/pulse/",
+  "title": "Pulse",
+  "images": "assets/images/",
+  "scripts": "assets/scripts/",
+  "styles": "assets/styles/",
+  "javascripts": {
+    "header": [
+      {
+        "file": "vendors.js"
+      }
+    ],
+    "footer": [
+      {
+        "file": "site.footer.min.js"
+      }
+    ]
+  }
+}

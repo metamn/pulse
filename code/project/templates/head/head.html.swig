@@ -16,6 +16,10 @@
     <link href="{{ site.url }}{{ site.styles }}site.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
     {{ scripts | safe }}
 
+	<style>
+  	@import url("https://use.typekit.net/syb1owt.css");
+	</style>
+
     {% include '__favicon/--extended/head__favicon--extended.html.swig' %}
   </head>
 
