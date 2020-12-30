@@ -40,6 +40,10 @@
     {
       "year": "2019",
       "topics": ["Design Systems", "Micro architectures", "No code / low code"]
+    },
+    {
+      "year": "2020",
+      "topics": ["Flashification", "New toolchains", "Component libraries"]
     }
   ]
 }

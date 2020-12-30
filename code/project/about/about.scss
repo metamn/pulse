@@ -1,8 +1,5 @@
 @mixin about {
   display: flex;
-  position: absolute;
-  padding: 5vh 0;
-  top: $lem * 2; // Edge 13 bugfix
 
   // to make a grid like Years
   &__spacer {
