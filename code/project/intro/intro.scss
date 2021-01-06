@@ -3,7 +3,6 @@
   flex-wrap: wrap;
 
   padding: 5vh 5vw;
-  @include border(normal, bottom);
 
   .about {
     @include about;

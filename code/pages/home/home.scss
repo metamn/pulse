@@ -14,14 +14,6 @@ html {
         @include intro;
       }
 
-      .articles {
-        @include articles;
-      }
-
-      .arrows {
-        @include arrows;
-      }
-
       .footer {
         @include footer;
       }
